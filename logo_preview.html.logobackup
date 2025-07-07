@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万道红工作室 - Logo设计预览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1c9765;
+            margin-bottom: 50px;
+            font-size: 32px;
+            font-weight: 300;
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .logo-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .logo-preview {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .logo-preview img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .logo-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1c9765;
+            margin-bottom: 10px;
+        }
+        
+        .logo-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .logo-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .logo-features li {
+            padding: 5px 0;
+            font-size: 13px;
+            color: #555;
+        }
+        
+        .logo-features li:before {
+            content: "✓";
+            color: #1c9765;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .select-btn {
+            background: linear-gradient(30deg, #269a65, #11adba);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .select-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(28, 151, 101, 0.3);
+        }
+        
+        .current-logo {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .comparison-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .comparison-item {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>万道红屈光性白内障工作室 - 创意Logo设计</h1>
+        
+        <!-- 当前Logo -->
+        <div class="current-logo">
+            <h2 style="color: #666; margin-bottom: 20px;">当前Logo</h2>
+            <div class="logo-preview">
+                <img src="wp-content/themes/oculistwan/images/logo.png" alt="当前Logo">
+            </div>
+            <p style="color: #999; font-size: 14px;">现有设计</p>
+        </div>
+        
+        <!-- 新设计方案 -->
+        <div class="logo-grid">
+            <!-- 创意版本 -->
+            <div class="logo-card">
+                <div class="logo-preview">
+                    <img src="wp-content/themes/oculistwan/images/logo_creative.svg" alt="创意Logo">
+                </div>
+                <div class="logo-title">创意动感版</div>
+                <div class="logo-description">
+                    融合现代科技感与医疗专业性，采用动态元素和渐变设计，体现创新精神。
+                </div>
+                <ul class="logo-features">
+                    <li>动态旋转效果</li>
+                    <li>科技感光线设计</li>
+                    <li>渐变色彩搭配</li>
+                    <li>现代化排版</li>
+                    <li>多层次视觉效果</li>
+                </ul>
+                <button class="select-btn" onclick="selectLogo('creative')">选择此设计</button>
+            </div>
+            
+            <!-- 现代版本 -->
+            <div class="logo-card">
+                <div class="logo-preview">
+                    <img src="wp-content/themes/oculistwan/images/logo_modern.svg" alt="现代Logo">
+                </div>
+                <div class="logo-title">现代科技版</div>
+                <div class="logo-description">
+                    参考DeepSeek风格，强调AI和科技元素，神经网络风格设计，体现前沿技术。
+                </div>
+                <ul class="logo-features">
+                    <li>神经网络节点</li>
+                    <li>AI科技感设计</li>
+                    <li>多层动画效果</li>
+                    <li>现代字体搭配</li>
+                    <li>智能化视觉语言</li>
+                </ul>
+                <button class="select-btn" onclick="selectLogo('modern')">选择此设计</button>
+            </div>
+            
+            <!-- 极简版本 -->
+            <div class="logo-card">
+                <div class="logo-preview">
+                    <img src="wp-content/themes/oculistwan/images/logo_minimal.svg" alt="极简Logo">
+                </div>
+                <div class="logo-title">极简精致版</div>
+                <div class="logo-description">
+                    参考Grok的简洁风格，去除冗余元素，突出核心信息，现代极简美学。
+                </div>
+                <ul class="logo-features">
+                    <li>极简设计理念</li>
+                    <li>清晰视觉层次</li>
+                    <li>优雅字体选择</li>
+                    <li>微妙动画效果</li>
+                    <li>高度可识别性</li>
+                </ul>
+                <button class="select-btn" onclick="selectLogo('minimal')">选择此设计</button>
+            </div>
+        </div>
+        
+        <!-- 对比说明 -->
+        <div class="comparison-section">
+            <h3 style="color: #1c9765; margin-bottom: 20px; text-align: center;">设计特点对比</h3>
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <h4 style="color: #1c9765;">创意动感版</h4>
+                    <p style="font-size: 12px; color: #666; margin-top: 10px;">
+                        适合：追求创新形象<br>
+                        特色：动态效果丰富<br>
+                        风格：现代科技感
+                    </p>
+                </div>
+                <div class="comparison-item">
+                    <h4 style="color: #1c9765;">现代科技版</h4>
+                    <p style="font-size: 12px; color: #666; margin-top: 10px;">
+                        适合：强调AI技术<br>
+                        特色：神经网络元素<br>
+                        风格：前沿科技感
+                    </p>
+                </div>
+                <div class="comparison-item">
+                    <h4 style="color: #1c9765;">极简精致版</h4>
+                    <p style="font-size: 12px; color: #666; margin-top: 10px;">
+                        适合：专业医疗形象<br>
+                        特色：简洁易识别<br>
+                        风格：现代极简风
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function selectLogo(type) {
+            const logoMap = {
+                'creative': 'logo_creative.svg',
+                'modern': 'logo_modern.svg',
+                'minimal': 'logo_minimal.svg'
+            };
+            
+            const selectedLogo = logoMap[type];
+            alert(`您选择了${type === 'creative' ? '创意动感版' : type === 'modern' ? '现代科技版' : '极简精致版'}设计！\n\n文件名：${selectedLogo}\n\n我将为您应用到网站中。`);
+        }
+    </script>
+</body>
+</html>

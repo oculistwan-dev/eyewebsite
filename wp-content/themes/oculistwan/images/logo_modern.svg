@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320" height="100" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 现代渐变 -->
+    <linearGradient id="modernGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c9765"/>
+      <stop offset="30%" style="stop-color:#269a65"/>
+      <stop offset="70%" style="stop-color:#11adba"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    
+    <!-- 神经网络风格渐变 -->
+    <radialGradient id="neuralGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1c9765;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#11adba;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.3"/>
+    </radialGradient>
+    
+    <!-- 发光效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 主要图标区域 -->
+  <g transform="translate(50,50)">
+    <!-- 外层科技圆环 -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#modernGradient)" stroke-width="2" opacity="0.4" stroke-dasharray="8,4">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 内层快速旋转环 -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.6" stroke-dasharray="3,3">
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 中心眼睛图标 - 现代化设计 -->
+    <g>
+      <!-- 眼睛外形 - 更几何化 -->
+      <path d="M -20,0 Q -20,-12 0,-12 Q 20,-12 20,0 Q 20,12 0,12 Q -20,12 -20,0 Z" 
+            fill="url(#neuralGradient)" stroke="url(#modernGradient)" stroke-width="2"/>
+      
+      <!-- 虹膜 - 科技感设计 -->
+      <circle cx="0" cy="0" r="8" fill="url(#modernGradient)" opacity="0.9"/>
+      
+      <!-- 瞳孔 - 带反光 -->
+      <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="url(#accentGradient)"/>
+      
+      <!-- 科技感光线 -->
+      <g opacity="0.7" filter="url(#glow)">
+        <line x1="-15" y1="0" x2="-25" y2="0" stroke="url(#modernGradient)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="15" y1="0" x2="25" y2="0" stroke="url(#modernGradient)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="-8" x2="0" y2="-15" stroke="url(#accentGradient)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="0" y1="8" x2="0" y2="15" stroke="url(#accentGradient)" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+    </g>
+    
+    <!-- 神经网络节点 -->
+    <g opacity="0.5">
+      <circle cx="-30" cy="-20" r="2" fill="url(#accentGradient)">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="30" cy="-20" r="2" fill="url(#modernGradient)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-30" cy="20" r="2" fill="url(#modernGradient)">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="30" cy="20" r="2" fill="url(#accentGradient)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <!-- 现代化文字设计 -->
+  <g transform="translate(120,50)">
+    <!-- 主标题 - 现代字体 -->
+    <text x="0" y="-15" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="url(#modernGradient)" filter="url(#glow)">
+      万道红
+    </text>
+    
+    <!-- 副标题 - 简洁设计 -->
+    <text x="0" y="5" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#666">
+      屈光性白内障工作室
+    </text>
+    
+    <!-- 英文标题 - 科技感 -->
+    <text x="0" y="20" font-family="'Courier New', monospace" font-size="9" fill="url(#accentGradient)" letter-spacing="1px">
+      REFRACTIVE CATARACT STUDIO
+    </text>
+    
+    <!-- 装饰线条 -->
+    <line x1="0" y1="28" x2="80" y2="28" stroke="url(#modernGradient)" stroke-width="1" opacity="0.3"/>
+    
+    <!-- 科技标签 -->
+    <text x="0" y="40" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#999" opacity="0.8">
+      AI-POWERED · PRECISION · INNOVATION
+    </text>
+  </g>
+  
+  <!-- 装饰性几何元素 -->
+  <g opacity="0.2">
+    <polygon points="280,20 290,30 280,40 270,30" fill="url(#modernGradient)"/>
+    <circle cx="300" cy="30" r="3" fill="url(#accentGradient)"/>
+    <rect x="285" y="50" width="8" height="8" fill="url(#modernGradient)" transform="rotate(45 289 54)"/>
+  </g>
+</svg>
