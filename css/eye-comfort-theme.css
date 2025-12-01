@@ -1,0 +1,147 @@
+/* 护眼舒适型配色方案 */
+:root {
+  /* 主色调 - 温和的绿色，模拟自然光 */
+  --primary-color: #4CAF50;
+  --primary-light: #80E27E;
+  --primary-dark: #087F23;
+  
+  /* 背景色 - 柔和的米色，减少眼部疲劳 */
+  --background-color: #F8F5F0;
+  --background-light: #FFFFFF;
+  --background-dark: #E8E5DE;
+  
+  /* 文字颜色 - 深灰色，提高可读性同时减少刺眼 */
+  --text-color: #333333;
+  --text-light: #666666;
+  --text-lighter: #999999;
+  
+  /* 强调色 - 用于重要信息和行动按钮 */
+  --accent-color: #2196F3;
+  --accent-light: #64B5F6;
+  --accent-dark: #0D47A1;
+  
+  /* 状态颜色 */
+  --success-color: #4CAF50;
+  --warning-color: #FF9800;
+  --error-color: #F44336;
+  
+  /* 边框和分割线 */
+  --border-color: #DDDDDD;
+  --border-light: #EEEEEE;
+  
+  /* 阴影 */
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.15);
+}
+
+/* 应用配色到网站元素 */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+/* 头部导航 */
+.header {
+  background-color: var(--background-light);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-logo a {
+  color: var(--primary-dark);
+}
+
+.main-nav a {
+  color: var(--text-color);
+}
+
+.main-nav a:hover,
+.main-nav .current-menu-item a {
+  color: var(--primary-color);
+}
+
+/* 页面标题 */
+.page-title h2 {
+  color: var(--primary-dark);
+}
+
+/* 按钮样式 */
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn.gra {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+/* 卡片和内容区域 */
+.about-contantlens-text-inner {
+  background-color: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--shadow-light);
+}
+
+.manufacturer-head h3 {
+  color: var(--primary-dark);
+}
+
+/* 标签页 */
+.tab-area {
+  background-color: var(--background-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-panel {
+  background-color: var(--background-light);
+}
+
+/* 表格 */
+.hour-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.hour-table td {
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+}
+
+/* 页脚 */
+.footer {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-site-logo a {
+  color: var(--primary-dark);
+}
+
+/* 链接 */
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+/* 强调文本 */
+.text-green {
+  color: var(--primary-color);
+}
+
+/* 医疗相关强调 */
+.healthcare-highlight {
+  background-color: var(--background-light);
+  border-left: 4px solid var(--primary-color);
+  padding: 15px;
+  margin: 15px 0;
+}

@@ -1,0 +1,61 @@
+<svg width="320" height="100" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变和样式 -->
+  <defs>
+    <!-- 专业医疗蓝渐变 -->
+    <linearGradient id="medicalBlueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f4c81"/>
+      <stop offset="100%" style="stop-color:#2d81c8"/>
+    </linearGradient>
+    
+    <!-- 专业医疗绿渐变 -->
+    <linearGradient id="medicalGreenGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a7f69"/>
+      <stop offset="100%" style="stop-color:#38b2ac"/>
+    </linearGradient>
+    
+    <!-- 简洁阴影效果 -->
+    <filter id="subtleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.1)"/>
+    </filter>
+  </defs>
+  
+  <!-- 主要设计区域 -->
+  <g>
+    <!-- 左侧图标部分 -->
+    <g transform="translate(55, 50)" filter="url(#subtleShadow)">
+      <!-- 眼科特色圆环 - 简洁而专业 -->
+      <circle cx="0" cy="0" r="30" fill="none" stroke="url(#medicalBlueGradient)" stroke-width="3"/>
+      
+      <!-- 瞳孔与虹膜 - 医疗精准感 -->
+      <circle cx="0" cy="0" r="12" fill="url(#medicalGreenGradient)"/>
+      <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+      <circle cx="-2" cy="-2" r="2" fill="white" opacity="0.8"/>
+      
+      <!-- 视觉光线 - 表现视力和光感 -->
+      <line x1="-25" y1="0" x2="25" y2="0" stroke="url(#medicalBlueGradient)" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      <line x1="0" y1="-25" x2="0" y2="25" stroke="url(#medicalBlueGradient)" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      
+      <!-- 医疗十字元素 - 增强专业性 -->
+      <path d="M -5,-1.5 H 5 M -1.5,-5 V 5" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+    </g>
+    
+    <!-- 右侧文字部分 -->
+    <g transform="translate(130, 50)" text-anchor="start">
+      <!-- 主标题 - 专业稳重 -->
+      <text x="0" y="0" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="600" fill="url(#medicalBlueGradient)">万道红</text>
+      
+      <!-- 副标题 - 清晰易读 -->
+      <text x="0" y="25" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="400" fill="#333333">
+        屈光性白内障工作室
+      </text>
+      
+      <!-- 英文标题 - 国际视野 -->
+      <text x="0" y="40" font-family="'Arial', sans-serif" font-size="9" font-weight="500" fill="#666666" letter-spacing="1.5px">
+        REFRACTIVE CATARACT STUDIO
+      </text>
+    </g>
+    
+    <!-- 品牌强化 - 底部横线 -->
+    <line x1="40" y1="80" x2="280" y2="80" stroke="url(#medicalGreenGradient)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>

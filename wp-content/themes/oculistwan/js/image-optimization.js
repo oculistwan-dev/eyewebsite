@@ -288,7 +288,7 @@ class ImageOptimizer {
 }
 
 // 初始化图片优化器
-let imageOptimizer;
+let imageOptimizer; // eslint-disable-line no-unused-vars
 document.addEventListener('DOMContentLoaded', () => {
     imageOptimizer = new ImageOptimizer();
 });

@@ -1,154 +1,147 @@
-//ローディング
-//ローディング画面の表示
-(function($){
-jQuery(window).on('load',function(){
-	jQuery(".loading").delay(400).fadeOut('slow');
-	jQuery(".stage").delay(200).fadeOut('slow');
-	jQuery(".top-slide-head").delay(500).fadeIn();
-});
-})(jQuery);
+// Loading screen functionality
+// Display loading screen
+(function(){
+	jQuery(window).on('load', function() {
+		jQuery(".loading").delay(400).fadeOut('slow');
+		jQuery(".stage").delay(200).fadeOut('slow');
+		jQuery(".top-slide-head").delay(500).fadeIn();
+	});
+})();
 
 
 
 
 
-//メニュートリガー
-jQuery(function(){
-	jQuery('.menu-trigger-wrap').on('click',function(){
+// Menu trigger functionality
+jQuery(function() {
+	jQuery('.menu-trigger-wrap').on('click', function() {
 		jQuery('.menu-trigger').toggleClass('show');
 		jQuery('.sp-nav-wrap').fadeToggle(400);
 	});
 });
 
 
-//スマホ背景固定
-jQuery(function(){
-	var state = false;
-	var scrollpos;
-	jQuery('.menu-trigger-wrap').on('click', function(){
-		if(state == false) {
+// Mobile background fix functionality
+jQuery(function() {
+	let state = false;
+	let scrollpos;
+	jQuery('.menu-trigger-wrap').on('click', function() {
+		if (state === false) {
 			scrollpos = jQuery(window).scrollTop();
 			jQuery('body').addClass('fixed').css({'top': -scrollpos});
 			jQuery('.sp-nav-wrap').addClass('open');
 			state = true;
 		} else {
 			jQuery('body').removeClass('fixed').css({'top': 0});
-			window.scrollTo( 0 , scrollpos );
+			window.scrollTo(0, scrollpos);
 			jQuery('.sp-nav-wrap').removeClass('open');
 			state = false;
 		}
 	});
 });
 
-//PCサブメニュー開閉
-jQuery(function () {
+// PC submenu toggle functionality
+jQuery(function() {
 	jQuery('.healthcare-nav,#healthcare-sub-nav').hover(
-		function () {
+		function() {
 			jQuery('#healthcare-sub-nav').stop().fadeIn();
 		},
-		function () {
+		function() {
 			jQuery('#healthcare-sub-nav').stop().fadeOut('fast');
-		});
+		}
+	);
 });
-jQuery(function () {
+
+jQuery(function() {
 	jQuery('.team-nav,#team-sub-nav').hover(
-		function () {
+		function() {
 			jQuery('#team-sub-nav').stop().fadeIn();
 		},
-		function () {
+		function() {
 			jQuery('#team-sub-nav').stop().fadeOut('fast');
+		}
+	);
+});
+
+// Menu trigger class toggle
+(function() {
+	jQuery(function() {
+		jQuery('.menu-trigger-wrap').click(function() {
+			jQuery(this).toggleClass("gra");
 		});
-});
-
-(function($){
-jQuery(function () {
-	jQuery('.menu-trigger-wrap').click(function(){
-		jQuery(this).toggleClass("gra");
 	});
-});
-})(jQuery);
+})();
 
 
 
-//nav-menu-accordion
-(function($){
-jQuery(function () { 
-	jQuery('.sp-main-nav li div').click(function() { 
-		jQuery(this).next('.close').slideToggle(); 
+// Navigation menu accordion functionality
+jQuery(function() {
+	jQuery('.sp-main-nav li div').click(function() {
+		jQuery(this).next('.close').slideToggle();
 		jQuery(this).toggleClass('open');
-	}); 
-});
-})(jQuery);
-
-$(function () {
-	$('.sp-main-nav li div').click(function () {
-		$(this).next('div').slideToggle();
-		$(this).find(".icon").toggleClass('open');
+		// Also handle icon toggle
+		jQuery(this).find(".icon").toggleClass('open');
 	});
 });
 
 
-//infiniteslide
-(function(){
-jQuery(function(){
-	jQuery('.infiniteslide01').infiniteslide({
-		speed: 30,
-		direction: 'left',
-		clone: 10,
-	});
-});
-})(jQuery);
-(function(){
-jQuery(function(){
-	jQuery('.infiniteslide02').infiniteslide({
-		speed: 30,
-		direction: 'right',
-		clone: 10,
-	});
-});
-})(jQuery);
-(function(){
-jQuery(function(){
-	jQuery('.infiniteslide03').infiniteslide({
-		speed: 30,
-		direction: 'left',
-	});
-});
-})(jQuery);
-
-
-//ページ内スクロール
-$windowWidth = window.innerWidth;
-
-$breakPointA = 520;
-$breakPointB = 1024;
-
-isMobileSize = ($windowWidth < $breakPointA);
-isPcSize = ($windowWidth > $breakPointB);
-
-if(isMobileSize){
+// Infinite slide functionality
 jQuery(function() {
-	var headerHeight = 72;
-	jQuery('[href^="#"]').not('.healthcare-nav a','team-nav a').click(function(){
-		var href= jQuery(this).attr("href");
-		var target = jQuery(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top-headerHeight; 
-		jQuery("html, body").animate({scrollTop:position}, 400, "swing");
-		return false;
-	});
+	// Initialize infinite slides if elements exist
+	if (jQuery('.infiniteslide01').length) {
+		jQuery('.infiniteslide01').infiniteslide({
+			speed: 30,
+			direction: 'left',
+			clone: 10
+		});
+	}
+	
+	if (jQuery('.infiniteslide02').length) {
+		jQuery('.infiniteslide02').infiniteslide({
+			speed: 30,
+			direction: 'right',
+			clone: 10
+		});
+	}
+	
+	if (jQuery('.infiniteslide03').length) {
+		jQuery('.infiniteslide03').infiniteslide({
+			speed: 30,
+			direction: 'left'
+		});
+	}
 });
-}
 
-if(isPcSize){
+
+// In-page scroll functionality
 jQuery(function() {
-	var headerHeight = 140;
-	jQuery('[href^="#"]').not('.healthcare-nav a','team-nav a').click(function(){
-		var href= jQuery(this).attr("href");
-		var target = jQuery(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top-headerHeight; 
-		jQuery("html, body").animate({scrollTop:position}, 400, "swing");
-		return false;
-	});
+	const windowWidth = window.innerWidth;
+	const breakPointA = 520;
+	const breakPointB = 1024;
+	
+	const isMobileSize = (windowWidth < breakPointA);
+	const isPcSize = (windowWidth > breakPointB);
+	
+	function initSmoothScroll(headerHeight) {
+		jQuery('[href^="#"]').not('.healthcare-nav a', '.team-nav a').click(function() {
+			const href = jQuery(this).attr("href");
+			const target = jQuery(href === "#" || href === "" ? 'html' : href);
+			
+			if (target.length) {
+				const position = target.offset().top - headerHeight;
+				jQuery("html, body").animate({scrollTop: position}, 400, "swing");
+			}
+			return false;
+		});
+	}
+	
+	if (isMobileSize) {
+		initSmoothScroll(72);
+	} else if (isPcSize) {
+		initSmoothScroll(140);
+	} else {
+		// Tablet size - use mobile header height
+		initSmoothScroll(72);
+	}
 });
-}
 
