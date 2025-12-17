@@ -200,6 +200,37 @@ a:hover {
   }
 }
 
+/* 强制覆盖主题中的 !important 规则（仅针对 top-slider 布局相关的样式，便于稳定右对齐） */
+@media screen and (min-width: 1024px) {
+  .wrap .top-slider {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    padding-left: 0 !important;
+    padding-right: 14vw !important;
+  }
+
+  .wrap .top-slider div.slide01,
+  .wrap .top-slider div.slide02,
+  .wrap .top-slider div.slide03,
+  .wrap .top-slide-catch {
+    width: 86vw !important;
+    margin-left: auto !important;
+    margin-right: 14vw !important;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .wrap .top-slider div.slide01,
+  .wrap .top-slider div.slide02,
+  .wrap .top-slider div.slide03,
+  .wrap .top-slide-catch {
+    margin-left: auto !important;
+    margin-right: 14vw !important;
+    width: 86vw !important;
+  }
+}
+
 /* 自定义页面头图（优先使用此文件，放置图片后即可生效） */
 .page-head.staff-head {
   background-image: url('../wp-content/themes/oculistwan/images/custom-service-head.jpg');
