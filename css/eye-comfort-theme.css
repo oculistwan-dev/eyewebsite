@@ -56,6 +56,23 @@ body {
   color: var(--text-color);
 }
 
+/* PC端导航字体调整 */
+@media (min-width: 1024px) {
+  .main-nav li a {
+    font-size: 17px !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .sub-menu-head {
+    font-size: 18px !important;
+  }
+  
+  .sub-menu-cont > ul > li > a {
+    font-size: 16px !important;
+  }
+}
+
 .main-nav a:hover,
 .main-nav .current-menu-item a {
   color: var(--primary-color);
@@ -78,7 +95,7 @@ body {
 }
 
 .btn.gra {
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color)) !important;
 }
 
 /* 卡片和内容区域 */
@@ -135,7 +152,7 @@ a:hover {
 
 /* 强调文本 */
 .text-green {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 /* 医疗相关强调 */
@@ -145,3 +162,55 @@ a:hover {
   padding: 15px;
   margin: 15px 0;
 }
+
+/* -------------------------
+   Overrides / fixes (loaded after theme CSS)
+   - 修复顶部轮播在大屏时右对齐的问题
+   - 支持自定义页面头图（放置文件：wp-content/themes/oculistwan/images/custom-service-head.jpg）
+   - 便于快速回退：优先使用非侵入式选择器和 media queries
+   ------------------------- */
+
+@media screen and (min-width: 1024px) {
+  /* 让轮播在大屏靠右显示（覆盖主题中的旧规则） */
+  .wrap .top-slider {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 14vw;
+  }
+
+  .wrap .top-slider div.slide01,
+  .wrap .top-slider div.slide02,
+  .wrap .top-slider div.slide03,
+  .wrap .top-slide-catch {
+    margin-left: auto;
+    margin-right: 14vw;
+    width: 86vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  /* 更大屏幕的微调 */
+  .wrap .top-slider div.slide01,
+  .wrap .top-slider div.slide02,
+  .wrap .top-slider div.slide03 {
+    margin-left: auto;
+    margin-right: 14vw;
+  }
+}
+
+/* 自定义页面头图（优先使用此文件，放置图片后即可生效） */
+.page-head.staff-head {
+  background-image: url('../wp-content/themes/oculistwan/images/custom-service-head.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* 若需要小屏不同图，可上传 custom-service-head-sp.jpg 并解除下面注释 */
+/* @media (max-width: 520px) {
+  .page-head.staff-head { background-image: url('../wp-content/themes/oculistwan/images/custom-service-head-sp.jpg'); }
+} */
+
+/* 建议：减少 !important 的使用并将全局字体/颜色覆盖合并到本主题文件中，便于维护 */
