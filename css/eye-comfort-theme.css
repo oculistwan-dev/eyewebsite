@@ -56,20 +56,20 @@ body {
   color: var(--text-color);
 }
 
-/* PC端导航字体调整 */
+/* PC端导航字体调整（替换掉使用 !important 的旧规则，使用更具体的选择器以避免强制覆盖） */
 @media (min-width: 1024px) {
-  .main-nav li a {
-    font-size: 17px !important;
+  .pc-header .pc-nav .main-nav li a {
+    font-size: 17px;
     font-weight: 500;
     letter-spacing: 0.5px;
   }
-  
-  .sub-menu-head {
-    font-size: 18px !important;
+
+  .pc-header .sub-menu-head {
+    font-size: 18px;
   }
-  
-  .sub-menu-cont > ul > li > a {
-    font-size: 16px !important;
+
+  .pc-header .sub-menu-cont > ul > li > a {
+    font-size: 16px;
   }
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .btn.gra {
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color)) !important;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
 }
 
 /* 卡片和内容区域 */
@@ -152,7 +152,7 @@ a:hover {
 
 /* 强调文本 */
 .text-green {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 }
 
 /* 医疗相关强调 */
