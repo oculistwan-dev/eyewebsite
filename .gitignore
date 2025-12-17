@@ -1,1 +1,16 @@
 .venv
+
+# OS / Editor temporary files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+
+# Common temp / backups
+*~
+*.swp
+*.bak
+*.orig
+*.tmp
+*.log
