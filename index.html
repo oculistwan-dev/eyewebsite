@@ -2,655 +2,697 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="format-detection" content="telephone=no">
-<meta http-equiv="content-language" content="zh-CN">
-<link rel="icon" href="favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Windows兼容性设置 -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+<link rel="apple-touch-icon" sizes="512x512" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
 /* Windows兼容性修复 */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
 body {
-    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', '黑体', 'Noto Sans CJK SC', 'Source Han Sans CN', 'WenQuanYi Micro Hei', '文泉驿微米黑', 'Droid Sans Fallback', 'SimSun', '宋体', Arial, sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', '黑体', 'Noto Sans CJK SC', 'Source Han Sans CN', 'WenQuanYi Micro Hei', '文泉驿微米黑', 'Droid Sans Fallback', 'SimSun', '宋体', Arial, sans-serif !important;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
 }
 /* 修复Windows下的flex布局问题 */
 .wrap, .header, .footer, .cta-inner {
-    display: block;
-    width: 100%;
+display: block;
+width: 100%;
 }
 /* 确保图片在Windows下正常显示 */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+max-width: 100%;
+height: auto;
+display: block;
 }
 /* 修复Windows下的背景图片问题 */
 .cta {
-    background-attachment: scroll !important;
+background-attachment: scroll !important;
 }
 /* 图片路径变量 */
 :root {
-    --img-path: "wp-content/themes/oculistwan/images/";
-    --logo-path: var(--img-path)"logo.svg";
-    --no-image-path: var(--img-path)"top-no-image.jpg";
+--img-path: "wp-content/themes/oculistwan/images/";
+--logo-path: var(--img-path)"logo_meaningful.svg";
+--no-image-path: var(--img-path)"top-no-image.webp";
 }
 </style>
 <title>万道红屈光性白内障工作室 | 华夏眼科集团徐州复兴眼科医院</title>
-<meta name="robots" content="max-image-preview:large" />
-<!-- 已移除海外DNS预取，提升国内访问速度 -->
-
-<meta name="description" content="万道红屈光性白内障工作室主要是开展白内障手术特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术也可以住院两天即可出院。我们华夏眼科集团徐州复兴眼科医院还设有屈光手术中心、青少年视光中心、眼底病、白内障及青光眼科、眼表及眼外伤病科。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="description" content="万道红屈光性白内障工作室主要是开展白内障手术，特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术，也可以住院两天即可出院。">
+<meta name="keywords" content="白内障手术,屈光性白内障,徐州眼科医院,眼底病治疗,玻璃体注射,近视手术,青少年视光,眼表疾病">
+<meta name="author" content="万道红屈光性白内障工作室">
+<meta name="geo.region" content="CN-JS">
+<meta name="geo.placename" content="徐州市泉山区">
 <link rel="canonical" href="https://www.xuzhoucataract.com/">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.xuzhoucataract.com/assets/images/ogp.jpg">
 <meta property="og:title" content="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院">
-<meta property="og:description" content="万道红屈光性白内障工作室主要是开展白内障手术特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术也可以住院两天即可出院。我们华夏眼科集团徐州复兴眼科医院还设有屈光手术中心、青少年视光中心、眼底病、白内障及青光眼科、眼表及眼外伤病科。">
+<meta property="og:description" content="万道红屈光性白内障工作室主要是开展白内障手术特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术也可以住院两天即可出院。">
 <meta property="og:url" content="https://www.xuzhoucataract.com/">
-<meta property="og:site_name" content="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院">
-<meta name="twitter:card" content="summary_large_image">
-
+<meta property="og:site_name" content="万道红屈光性白内障工作室">
+<meta property="og:image" content="https://www.xuzhoucataract.com/wp-content/themes/oculistwan/images/logo_meaningful.svg">
+<meta property="article:author" content="万道红屈光性白内障工作室">
+<meta property="article:publisher" content="华夏眼科集团徐州复兴眼科医院">
 <style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
 <link rel="stylesheet" href="vendor/css/swiper.min.css" type="text/css" media="all" />
-<link rel="stylesheet" id="reset-css" href="wp-content/themes/oculistwan/css/common.css?ver=1.0.0" type="text/css" media="all" />
-<link rel="stylesheet" id="style-css" href="wp-content/themes/oculistwan/css/style.min.css?ver=1.0.0" type="text/css" media="all" />
-<link rel="stylesheet" id="eye-comfort-theme" href="css/eye-comfort-theme.css" type="text/css" media="all" />
-
+<link rel="stylesheet" href="wp-content/themes/oculistwan/css/common.css?ver=1.0.0" type="text/css" media="all" />
+<link rel="stylesheet" href="wp-content/themes/oculistwan/css/style.min.css?ver=1.0.0" type="text/css" media="all" />
+<link rel="stylesheet" href="css/eye-comfort-theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/mouse-effect-styles.css" type="text/css" media="all" />
 <style>
 /* 地图响应式显示：只在手机端显示 */
 .footer-map.mobile-only {
-    display: none;
+display: none;
 }
-
+/* PC端导航字体调整 */
+@media (min-width: 1024px) {
+.main-nav li a {
+font-size: 17px !important;
+font-weight: 500;
+letter-spacing: 0.5px;
+}
+.sub-menu-head {
+font-size: 18px !important;
+}
+.sub-menu-cont > ul > li > a {
+font-size: 16px !important;
+}
+}
 @media (max-width: 768px) {
-    .footer-map.mobile-only {
-        display: block;
-    }
+.footer-map.mobile-only {
+display: block;
 }
-
+}
 @media (min-width: 769px) {
-    .footer-map.mobile-only {
-        display: none !important;
-    }
+.footer-map.mobile-only {
+display: none !important;
+}
 }
 </style>
 <style id="akismet-widget-style-inline-css" type="text/css">.a-stats {
-				--akismet-color-mid-green: #357b49;
-				--akismet-color-white: #fff;
-				--akismet-color-light-grey: #f6f7f7;
-
-				max-width: 350px;
-				width: auto;
-			}
-
-			.a-stats * {
-				all: unset;
-				box-sizing: border-box;
-			}
-
-			.a-stats strong {
-				font-weight: 600;
-			}
-
-			.a-stats a.a-stats__link,
-			.a-stats a.a-stats__link:visited,
-			.a-stats a.a-stats__link:active {
-				background: var(--akismet-color-mid-green);
-				border: none;
-				box-shadow: none;
-				border-radius: 8px;
-				color: var(--akismet-color-white);
-				cursor: pointer;
-				display: block;
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-				font-weight: 500;
-				padding: 12px;
-				text-align: center;
-				text-decoration: none;
-				transition: all 0.2s ease;
-			}
-
-			/* Extra specificity to deal with TwentyTwentyOne focus style */
-			.widget .a-stats a.a-stats__link:focus {
-				background: var(--akismet-color-mid-green);
-				color: var(--akismet-color-white);
-				text-decoration: none;
-			}
-
-			.a-stats a.a-stats__link:hover {
-				filter: brightness(110%);
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
-			}
-
-			.a-stats .count {
-				color: var(--akismet-color-white);
-				display: block;
-				font-size: 1.5em;
-				line-height: 1.4;
-				padding: 0 13px;
-				white-space: nowrap;
-			}
-		
+--akismet-color-mid-green: #357b49;
+--akismet-color-white: #fff;
+--akismet-color-light-grey: #f6f7f7;
+max-width: 350px;
+width: auto;
+}
+.a-stats * {
+all: unset;
+box-sizing: border-box;
+}
+.a-stats strong {
+font-weight: 600;
+}
+.a-stats a.a-stats__link,
+.a-stats a.a-stats__link:visited,
+.a-stats a.a-stats__link:active {
+background: var(--akismet-color-mid-green);
+border: none;
+box-shadow: none;
+border-radius: 8px;
+color: var(--akismet-color-white);
+cursor: pointer;
+display: block;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+font-weight: 500;
+padding: 12px;
+text-align: center;
+text-decoration: none;
+transition: all 0.2s ease;
+}
+/* Extra specificity to deal with TwentyTwentyOne focus style */
+.widget .a-stats a.a-stats__link:focus {
+background: var(--akismet-color-mid-green);
+color: var(--akismet-color-white);
+text-decoration: none;
+}
+.a-stats a.a-stats__link:hover {
+filter: brightness(110%);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+}
+.a-stats .count {
+color: var(--akismet-color-white);
+display: block;
+font-size: 1.5em;
+line-height: 1.4;
+padding: 0 13px;
+white-space: nowrap;
+}
 </style>
 <script src="vendor/js/jquery.min.js"></script>
-<!-- 已移除日本字体服务，使用本地中文字体 -->
 <script type="text/javascript" src="vendor/js/swiper.min.js" id="swiper-js"></script>
-<script type="text/javascript" src="wp-content/themes/oculistwan/js/infiniteslidev2.min.js?ver=1.0.0" id="infiniteslidev-js"></script>
-<script type="text/javascript" src="wp-content/themes/oculistwan/js/libs.js?ver=1.0.0" id="libs-js"></script>
+<script type="text/javascript" src="wp-content/themes/oculistwan/js/infiniteslidev2.min.js" id="infiniteslidev-js"></script>
+<script type="text/javascript" src="wp-content/themes/oculistwan/js/libs.js" id="libs-js"></script>
 <link rel="https://api.w.org/" href="https://www.xuzhoucataract.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.xuzhoucataract.com/wp-json/wp/v2/pages/2" /><link rel="alternate" type="application/json+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oculistwan.jp%2F" />
 <link rel="alternate" type="text/xml+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oculistwan.jp%2F&amp;format=xml" />
 <style>:root {
-			--lazy-loader-animation-duration: 300ms;
-		}
-		  
-		.lazyload {
-	display: block;
+--lazy-loader-animation-duration: 300ms;
 }
-
+.lazyload {
+display: block;
+}
 .lazyload,
-        .lazyloading {
-			opacity: 0;
-		}
-
-		.lazyloaded {
-			opacity: 1;
-			transition: opacity 300ms;
-			transition: opacity var(--lazy-loader-animation-duration);
-		}</style><noscript><style>.lazyload { display: none; } .lazyload[class*="lazy-loader-background-element-"] { display: block; opacity: 1; }</style></noscript><!-- 已移除日文字体样式，使用中文字体系统 -->
-<!-- 已移除日本字体服务 -->
-
-<!-- Google Analytics已移除，如需统计可使用百度统计等国内服务 -->
+.lazyloading {
+opacity: 0;
+}
+.lazyloaded {
+opacity: 1;
+transition: opacity 300ms;
+transition: opacity var(--lazy-loader-animation-duration);
+}</style><noscript><style>.lazyload { display: none; } .lazyload[class*="lazy-loader-background-element-"] { display: block; opacity: 1; }</style></noscript>
 </head>
 <body>
-	<div class="loading" data-title=".dot-windmill">
-		<div class="stage">
-			<div class="dot-windmill"></div>
-		</div>
-	</div>
-	<div class="wrap">
-		<div class="pc-header">
-			<header class="header">
-				<div class="header-inner">
-					<h1 class="site-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></h1>
-					<div class="pc-nav-wrap">
-						<nav id="nav">
-							<div class="pc-nav">
-								<ul class="main-nav"><li class="current-menu-item"><a href="index.html" aria-current="page">首 页</a></li>
+<div class="loading" data-title=".dot-windmill">
+<div class="stage">
+<div class="dot-windmill"></div>
+</div>
+</div>
+<div class="wrap">
+<div class="pc-header">
+<header class="header">
+<div class="header-inner">
+<h1 class="site-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo_meaningful.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></h1>
+<div class="pc-nav-wrap">
+<nav id="nav">
+<div class="pc-nav">
+<ul class="main-nav"><li class="current-menu-item"><a href="index.html" aria-current="page">首 页</a></li>
 <li><a href="guide/index.html">首诊患者指南</a></li>
 <li class="healthcare-nav"><a>白内障和手术</a></li>
 <li class="team-nav"><a>我们的团队</a></li>
 <li><a href="facility/index.html">我们的设备</a></li>
 <li><a href="news/index.html">最新信息</a></li>
 </ul>							</div>
-							<div id="healthcare-sub-nav" class="header-sub-menu">
-								<div class="sub-menu-inner">
-									<div class="sub-menu-head">
-										<span class="sub-menu-title">白内障和手术</span>
-									</div>
-									<div class="sub-menu-cont">
-										<ul><li><a href="healthcare/index.html">白内障和手术</a></li>
+<div id="healthcare-sub-nav" class="header-sub-menu">
+<div class="sub-menu-inner">
+<div class="sub-menu-head">
+<span class="sub-menu-title">白内障和手术</span>
+</div>
+<div class="sub-menu-cont">
+<ul><li><a href="healthcare/index.html">白内障和手术</a></li>
 <li><a href="cataract/index.html">关于白内障</a></li>
 <li><a href="surgical/index.html">手术方式</a></li>
 </ul>									</div>
-								</div>
-							</div>
-							<div id="team-sub-nav" class="header-sub-menu">
-								<div class="sub-menu-inner">
-									<div class="sub-menu-head">
-										<span class="sub-menu-title">我们的团队</span>
-									</div>
-									<div class="sub-menu-cont">
-										<ul><li><a href="team/index.html">医护团队</a></li>
-									<li><a href="team/elegance/index.html">团队理念</a></li>
+</div>
+</div>
+<div id="team-sub-nav" class="header-sub-menu">
+<div class="sub-menu-inner">
+<div class="sub-menu-head">
+<span class="sub-menu-title">我们的团队</span>
+</div>
+<div class="sub-menu-cont">
+<ul><li><a href="team/index.html">我们的团队名称</a></li>
+<li><a href="team/elegance/index.html">团队理念</a></li>
 <li><a href="team/service/index.html">特检客服</a></li>
-<li><a href="recruit/index.html">合作信息</a></li>
 </ul>									</div>
-								</div>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</header>
-		</div>
-		<div class="sp-header">
-			<header class="header">
-				<div class="header-inner">
-					<h1 class="site-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></h1>
-					<a class="header-call" href="tel:15996396039"><img src="wp-content/themes/oculistwan/images/header-call.svg" alt="Call">电话</a>
-					<div class="menu-trigger-wrap gra">
-						<div class="menu-trigger">
-							<span></span>
-							<span></span>
-						</div>
-					</div>
-					<div class="sp-nav-wrap">
-						<nav class="sp-nav gra">
-							<ul class="sp-main-nav">
-								<li><a href="index.html">首 页</a></li>
-								<li><a href="guide/index.html">首诊患者指南</a></li>
-								<li><div>白内障和手术<div class="icon-wrap"><span class="icon"></span></div></div>
-									<ul class="close"><li><a href="healthcare/index.html">白内障和手术</a></li>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</header>
+</div>
+<div class="sp-header">
+<header class="header">
+<div class="header-inner">
+<h1 class="site-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo_meaningful.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></h1>
+<a class="header-call" href="tel:15996396039"><img src="wp-content/themes/oculistwan/images/header-call.svg" alt="Call">电话</a>
+<div class="menu-trigger-wrap gra">
+<div class="menu-trigger">
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="sp-nav-wrap">
+<nav class="sp-nav gra">
+<ul class="sp-main-nav">
+<li><a href="index.html">首 页</a></li>
+<li><a href="guide/index.html">首诊患者指南</a></li>
+<li><div>白内障和手术<div class="icon-wrap"><span class="icon"></span></div></div>
+<ul class="close"><li><a href="healthcare/index.html">白内障和手术</a></li>
 <li><a href="cataract/index.html">关于白内障</a></li>
 <li><a href="surgical/index.html">白内障手术</a></li>
 </ul>								</li>
-								<li><div>我们的团队<div class="icon-wrap"><span class="icon"></span></div></div>
-									<ul class="close"><li><a href="team/index.html">医护团队</a></li>
+<li><div>我们的团队<div class="icon-wrap"><span class="icon"></span></div></div>
+<ul class="close"><li><a href="team/index.html">我们的团队名称</a></li>
 <li><a href="team/elegance/index.html">团队理念</a></li>
 <li><a href="team/service/index.html">特检客服</a></li>
-<li><a href="recruit/index.html">合作信息</a></li>
 </ul>								</li>
-								<li><a href="facility/index.html">我们的设备</a></li>
-								<li><a href="news/index.html">最新动态</a></li>
-							</ul>
-						</nav>
-						<div class="sp-nav-info">
-							<div class="sp-nav-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></div>
-							<p class="address">徐州市泉山区中山南路 142 号</p>
-							<a class="btn open-nav-btn red-btn" href="tel:15996396039"><img src="wp-content/themes/oculistwan/images/tel-icon.svg" alt="Tel">点击拨打电话</a>
-						</div>
-						<div class="footer-hour">
-							<table class="hour-table c-hours-table">
-								<thead>
-									<tr>
-										<th>接诊时间</th>
-										<td>周一</td>
-										<td>周二</td>
-										<td>周三</td>
-										<td>周四</td>
-										<td>周五</td>
-										<td>周六</td>
-										<td>周日/节假日</td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th>8:00 - 12:00<span>诊疗开始 8:00</span></th>
-										<td>●</td>
-										<td>●</td>
-										<td>●</td>
-										<td>／</td>
-										<td>●</td>
-										<td>●</td>
-										<td>／</td>
-									</tr>
-									<tr>
-										<th>14:00 - 18:00<span>诊疗开始 14:00</span></th>
-										<td>●</td>
-										<td>／</td>
-										<td>●</td>
-										<td>／</td>
-										<td>●</td>
-										<td>／</td>
-										<td>／</td>
-									</tr>
-								</tbody>
-							</table>
-							<ul class="hour-warning">
-								<li>※ 检查开始时间为上午8:00，下午14:00。</li>
-								<li>※ 周一、周二、周五下午为手术日。</li>
-								<li>※ 日间手术患者请提前预约检查再到院手术。</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</header>
-		</div><div class="swiper-container top-slider">
-	<div class="swiper-wrapper">
-		<div class="swiper-slide">
-			<div class="slide-img slide01">
-				<div class="top-slide-catch">
-					<div class="top-slide-head">
-						<p>Health for all eyes</p>
-						<h2>为了所有人的<span class="text-green">眼睛</span><br>健康。</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="slide-img slide02">
-				<div class="top-slide-catch">
-					<div class="top-slide-head">
-						<p>Health for all eyes</p>
-						<h2>从<span class="text-green">患者</span>角度出发<br>提供贴心的医疗和服务。</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="slide-img slide03"></div>
-			<div class="top-slide-catch">
-				<div class="top-slide-head">
-					<p>Health for all eyes</p>
-					<h2>守护您和家人的<br><span class="text-green">眼睛</span>健康。</h2>
-				</div>
-			</div>
-		</div>
-	</div>
+<li><a href="facility/index.html">我们的设备</a></li>
+<li><a href="news/index.html">最新动态</a></li>
+</ul>
+</nav>
+<div class="sp-nav-info">
+<div class="sp-nav-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo_meaningful.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></div>
+<p class="address">徐州市泉山区中山南路 142 号</p>
+<a class="btn open-nav-btn red-btn" href="tel:15996396039"><img src="wp-content/themes/oculistwan/images/tel-icon.svg" alt="Tel">点击拨打电话</a>
 </div>
-<div class="scrolldown"><p><span class="text-green">S</span>croll</p></div>
+<div class="footer-hour">
+<table class="hour-table c-hours-table">
+<thead>
+<tr>
+<th>接诊时间</th>
+<td>周一</td>
+<td>周二</td>
+<td>周三</td>
+<td>周四</td>
+<td>周五</td>
+<td>周六</td>
+<td>周日/节假日</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>8:00 - 12:00<span>诊疗开始 8:00</span></th>
+<td>●</td>
+<td>●</td>
+<td>●</td>
+<td>／</td>
+<td>●</td>
+<td>●</td>
+<td>／</td>
+</tr>
+<tr>
+<th>14:00 - 18:00<span>诊疗开始 14:00</span></th>
+<td>●</td>
+<td>／</td>
+<td>●</td>
+<td>／</td>
+<td>●</td>
+<td>／</td>
+<td>／</td>
+</tr>
+</tbody>
+</table>
+<ul class="hour-warning">
+<li>※ 检查开始时间为上午8:00，下午14:00。</li>
+<li>※ 周一、周二、周五下午为手术日。</li>
+<li>※ 日间手术患者请提前预约检查再到院手术。</li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+</div><div class="swiper-container top-slider">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="slide-img slide01">
+<div class="top-slide-catch">
+<div class="top-slide-head">
+<p>Health for all eyes</p>
+<h2>为了所有人的<span class="text-green">眼睛</span><br>健康。</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="slide-img slide02">
+<div class="top-slide-catch">
+<div class="top-slide-head">
+<p>Health for all eyes</p>
+<h2>从<span class="text-green">患者</span>角度出发<br>提供贴心的医疗和服务。</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="slide-img slide03">
+<div class="top-slide-catch">
+<div class="top-slide-head">
+<p>Health for all eyes</p>
+<h2>守护您和家人的<br><span class="text-green">眼睛</span>健康。</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="scrolldown" style="display: block !important; position: absolute; top: 400px !important; left: 104px !important; z-index: 997;">
+<div style="position: relative; height: 100px; width: 40px; writing-mode: vertical-rl; text-orientation: upright;">
+<svg style="position: absolute; top: 0; left: 10px; width: 20px; height: 30px; z-index: 999;" viewBox="0 0 20 30" xmlns="http://www.w3.org/2000/svg">
+<rect x="2" y="2" width="16" height="26" rx="8" ry="8" fill="none" stroke="#888" stroke-width="1.5"/>
+<rect x="8" y="6" width="4" height="8" rx="2" fill="#1c9765"/>
+<circle cx="10" cy="12" r="1.5" fill="#ff0000" opacity="0.8">
+<animate attributeName="cy" values="8;16;8" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+</circle>
+</svg>
+<p style="position: absolute; bottom: 16px; left: 12px; color: #888; font-size: 1.1rem; margin: 0; letter-spacing: 8px;"><span class="text-green" style="display: inline-block;">滚</span><span style="color: #ff0000;">动</span></p>
+<div style="position: absolute; bottom: 0; left: 1px; width: 7px; height: 7px; border-radius: 50%; background: #1c9765; z-index: 998; animation: circlemove 1.6s ease-in-out infinite, circlemovehide 1.6s ease-out infinite;"></div>
+<div style="position: absolute; bottom: 0; left: 4px; width: 1px; height: 64px; background: #ccc;"></div>
+</div>
+</div>
+<style>
+@keyframes circlemove {
+0% { bottom: 59px; }
+100% { bottom: -5px; }
+}
+@keyframes circlemovehide {
+0% { opacity: 0; }
+50% { opacity: 1; }
+80% { opacity: 0.9; }
+100% { opacity: 0; }
+}
+</style>
 <div class="top">
-	<section class="top-about">
-		<div class="top-about-inner">
-			<div class="top-about-text">
-				<div class="top-about-text-inner">
-					<header class="top-main-head">
-						<span><span class="text-green">A</span>bout us</span>
-						<h3>关注您的<span class="text-green">眼睛健康</span></h3>
-					</header>
-					<p>"眼睛健康"<br>是感受幸福人生的重要元素。</p>
-					<p>万道红屈光性白内障工作室自成立以来，一直致力于提高诊疗技术，积极引进最佳设备，满足地区居民各种眼部问题的"治愈"愿望。</p>
-					<p>我们认为医疗的基本是"与患者设身处地换位思考的医疗"。为此，我们认为所有员工都必须始终是您身边的存在。</p>
-					<a class="btn top-btn" href="healthcare/index.html">白内障和手术<span class="arrow">&rarr;</span></a>
-				</div>
-			</div>
-			<div class="top-about-img">
-				<picture>
-					<source media="(max-width:519px)" srcset="wp-content/themes/oculistwan/images/top-about-sp.jpg">
-					<source media="(max-width:1023px)" srcset="wp-content/themes/oculistwan/images/top-about-tb.jpg">
-					<img loading="lazy" src="wp-content/themes/oculistwan/images/top-about-pc.jpg" alt="眼睛健康">
-				</picture>
-			</div>
-		</div>
-	</section>
-	<section class="top-medical">
-		<div class="top-medical-inner">
-			<div class="top-medical-text">
-				<header class="top-second-head">
-					<span><span class="text-green">M</span>edical</span>
-					<h3><span class="text-green">诊</span>疗内容</h3>
-				</header>
-				<p>我们做些什么。<br>我们还有其他专科门诊。</p>
-				<a class="btn top-btn" href="cataract/index.html">白内障工作室门诊<span class="arrow">&rarr;</span></a>
-			</div>
-			<div class="top-medical-cont">
-				<ul>
-					<li>
-						<h4>白内障工作室门诊</h4>
-						<p>详细检查您的白内障，使用最新手术设备，进行微创日间或住院白内障手术。</p>
-					</li>
-					<li>
-						<h4>眼底病的门诊及手术</h4>
-						<p>使用最新手术设备，检查和进行玻璃体手术。</p>
-					</li>
-					<li>
-						<h4>屈光手术</h4>
-						<p>使用最新手术设备，进行近视、散光、老视手术。</p>
-					</li>
-					<li>
-						<h4>青少年视光门诊及手术</h4>
-						<p>使用最新手术设备，进行屈光不正的矫治和斜视手术。</p>
-					</li>
-					<li>
-						<h4>眼表及眼外伤门诊及手术</h4>
-						<p>胬肉、倒睫眼睑肿物等诊断及手术。</p>
-					</li>
-					<li>
-						<h4>门诊激光治疗</h4>
-						<p>我们为糖尿病视网膜病变、视网膜静脉阻塞、视网膜裂孔、后发性白内障等提供激光治疗。</p>
-					</li>
-					<li>
-						<h4>玻璃体注射</h4>
-						<p>我们为老年性黄斑变性、视网膜静脉阻塞、糖尿病性视网膜病变等提供玻璃体注射治疗。玻璃体注射可以当日完成。</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section class="top-features">
-		<header class="top-feature-head">
-			<span>Features</span>
-			<h3>工作室特色</h3>
-		</header>
-		<div class="top-features-inner">
-			<div class="top-features-cont">
-				<figure class="top-features-img">
-					<img loading="lazy" src="wp-content/themes/oculistwan/images/top-features01.jpg" alt="工作中的主任医师">
-				</figure>
-				<div class="top-features-text">
-					<div class="top-features-text-inner">
-						<header class="top-main-head">
-							<span><span class="text-green">F</span>eatures 01</span>
-							<h3>5名<span class="text-green">团队成员</span>在职</h3>
-						</header>
-						<p>万道红屈光性白内障工作室拥有专业知识和技术的员工，帮助保护您的眼睛健康，守护您的多彩的视界。</p>
-						<a class="btn top-btn" href="team/service/index.html">了解更多<span class="arrow">&rarr;</span></a>
-					</div>
-				</div>
-			</div>
-			<div class="top-features-cont">
-				<figure class="top-features-img">
-					<img loading="lazy" src="wp-content/themes/oculistwan/images/top-features02.jpg" alt="手术室中的院长">
-				</figure>
-				<div class="top-features-text">
-					<div class="top-features-text-inner">
-						<header class="top-main-head">
-							<span><span class="text-green">F</span>eatures 02</span>
-							<h3>先进的<span class="text-green">设备</span>齐全</h3>
-						</header>
-						<p>我们能够进行包括白内障在内的手术治疗。配备先进的医疗设备。我们致力于建立能够进行适当诊断和治疗的体系。我们也进行大量的白内障手术和视网膜玻璃体手术。</p>
-						<a class="btn top-btn" href="facility/index.html">了解更多<span class="arrow">&rarr;</span></a>
-					</div>
-				</div>
-			</div>
-			<div class="top-features-cont">
-				<figure class="top-features-img">
-					<img loading="lazy" src="wp-content/themes/oculistwan/images/top-features03.jpg" alt="专业医生接诊">
-				</figure>
-				<div class="top-features-text">
-					<div class="top-features-text-inner">
-						<header class="top-main-head">
-							<span><span class="text-green">F</span>eatures 03</span>
-							<h3>专科医生主持的<span class="text-green">专科门诊</span></h3>
-						</header>
-						<p>除了常规诊疗外，我院还提供完全预约制的视网膜、青光眼、儿童·斜视专科医生主持的专科门诊。要接受专科门诊，需要先进行一般门诊就诊。</p>
-						<a class="btn top-btn" href="cataract/index.html">了解更多<span class="arrow">&rarr;</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="top-topics">
-		<div class="top-topics-inner">
-			<div class="top-topics-text">
-				<header class="top-second-head">
-					<span><span class="text-green">T</span>opics</span>
-					<h3><span class="text-green">团</span>队专题</h3>
-				</header>
-				<p>介绍工作室的诊疗相关内容<br>和设备等。</p>
-			</div>
-			<div class="top-topics-cont">
-				<div class="swiper-container topics-slider">
-					<div class="swiper-wrapper">
-																								<div class="swiper-slide topics-post">
-								<a href="topics/480/index.html">
-									<figure class="top-topics-img">
-										<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.jpg" alt="暂无图片">
-									</figure>
-									<div class="top-topics-post">
-										<h4>关于近视进展抑制眼药水的使用</h4>
-										<time datetime="2025.04.18" itemprop="datepublished">2025.04.18</time>
-										<span class="gra">专题</span>
-									</div>
-								</a>
-							</div>
-							<div class="swiper-slide topics-post">
-								<a href="topics/462/index.html">
-									<figure class="top-topics-img">
-										<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.jpg" alt="爵士音乐会现场">
-									</figure>
-									<div class="top-topics-post">
-										<h4>举办了慈善爵士音乐会</h4>
-										<time datetime="2024.09.25" itemprop="datepublished">2024.09.25</time>
-										<span class="gra">专题</span>
-									</div>
-								</a>
-							</div>
-							<div class="swiper-slide topics-post">
-								<a href="topics/460/index.html">
-									<figure class="top-topics-img">
-										<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.jpg" alt="暂无图片">
-									</figure>
-									<div class="top-topics-post">
-										<h4>关于医疗DX推进体制整备加算</h4>
-										<time datetime="2024.09.21" itemprop="datepublished">2024.09.21</time>
-										<span class="gra">专题</span>
-									</div>
-								</a>
-							</div>
-							<div class="swiper-slide topics-post">
-								<a href="topics/454/index.html">
-									<figure class="top-topics-img">
-										<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.jpg" alt="爵士音乐会通知">
-									</figure>
-									<div class="top-topics-post">
-										<h4>慈善爵士音乐会通知</h4>
-										<time datetime="2024.08.26" itemprop="datepublished">2024.08.26</time>
-										<span class="gra">专题</span>
-									</div>
-								</a>
-							</div>
-							<div class="swiper-slide topics-post">
-								<a href="topics/441/index.html">
-									<figure class="top-topics-img">
-										<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.jpg" alt="暂无图片">
-									</figure>
-									<div class="top-topics-post">
-										<h4>关于医疗信息获取加算</h4>
-										<time datetime="2024.05.29" itemprop="datepublished">2024.05.29</time>
-										<span class="gra">专题</span>
-									</div>
-								</a>
-							</div>
-							<div class="swiper-slide topics-post">
-								<a href="topics/201/index.html">
-									<figure class="top-topics-img">
-										<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.jpg" alt="臭氧发生器">
-									</figure>
-									<div class="top-topics-post">
-										<h4>关于新型冠状病毒感染症对策</h4>
-										<time datetime="2023.05.02" itemprop="datepublished">2023.05.02</time>
-										<span class="gra">专题</span>
-									</div>
-								</a>
-							</div>
-																								</div>
-					<div class="swiper-scrollbar"></div>
-				</div>
-			</div>
-			<a class="btn top-btn topics-btn" href="topics/index.html">查看全部<span class="arrow">&rarr;</span></a>
-		</div>
-		
-	</section>
-
+<section class="top-about">
+<div class="top-about-inner">
+<div class="top-about-text">
+<div class="top-about-text-inner">
+<header class="top-main-head">
+<span><span class="text-green">A</span>bout us</span>
+<h3>关注您的<span class="text-green">眼睛健康</span></h3>
+</header>
+<p><span class="emph-text">“眼睛健康”<br>是感受幸福人生的重要元素。</span></p>
+<p>万道红屈光性白内障工作室自成立以来，一直致力于提高诊疗技术，积极引进最佳设备，满足地区居民各种眼部问题的<span class="emph-text">“治愈”</span>愿望。</p>
+<p>我们认为医疗的基本是<span class="emph-text">“与患者设身处地换位思考的医疗”</span>。为此，我们认为所有员工都必须始终是您身边的最好的陪伴。</p>
+<a class="btn top-btn" href="healthcare/index.html">白内障和手术<span class="arrow">&rarr;</span></a>
 </div>
-	<div class="cta">
- 
-	<div class="cta-inner">
-		<div class="cta-left">
-			<header class="cta-head">
-				<h3>发展需要合作</h3>
-				<span>合作信息</span>
-				</header>
-				<p>工作室正在寻找合作伙伴。<br>欢迎随时咨询。</p>
-		</div>
-		<a class="btn cta-btn" href="recruit/index.html">查看合作信息<span class="arrow">&rarr;</span></a>
-	</div>
+</div>
+<div class="top-about-img">
+<picture>
+<source media="(max-width:519px)" type="image/webp" srcset="wp-content/themes/oculistwan/images/top-about.webp">
+<source media="(max-width:519px)" srcset="wp-content/themes/oculistwan/images/top-about-sp.jpg">
+<source media="(max-width:1023px)" type="image/webp" srcset="wp-content/themes/oculistwan/images/top-about.webp">
+<source media="(max-width:1023px)" srcset="wp-content/themes/oculistwan/images/top-about-tb.jpg">
+<source type="image/webp" srcset="wp-content/themes/oculistwan/images/top-about-pc.webp">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-about-pc.jpg" alt="眼睛健康">
+</picture>
+</div>
+</div>
+</section>
+<section class="top-medical">
+<div class="top-medical-inner">
+<div class="top-medical-text">
+<header class="top-second-head">
+<span><span class="text-green">M</span>edical</span>
+<h3><span class="text-green">诊</span>疗内容</h3>
+</header>
+<p>我们能做些什么。<br>我们复兴眼科医院还有其他专科门诊。</p>
+<a class="btn top-btn" href="cataract/index.html">屈光性白内障工作室<span class="arrow">&rarr;</span></a>
+</div>
+<div class="top-medical-cont">
+<ul>
+<li>
+<a href="healthcare/index.html"><h4>白内障工作室门诊</h4></a>
+<p>使用国内先进检测设备详细检查您的白内障及眼部情况，使用最新手术设备，进行微创屈光性白内障手术，可以日间或住院手术。</p>
+</li>
+<li>
+<h4>眼底病的门诊及手术</h4>
+<p>使用最新手术设备，检查和进行玻璃体手术。</p>
+</li>
+<li>
+<h4>屈光手术</h4>
+<p>使用最新手术设备，进行近视、散光、老视手术。</p>
+</li>
+<li>
+<h4>青少年视光门诊及手术</h4>
+<p>使用最新手术设备，进行屈光不正的矫治和斜视手术。</p>
+</li>
+<li>
+<h4>眼表及眼外伤门诊及手术</h4>
+<p>胬肉、倒睫眼睑肿物等诊断及手术。</p>
+</li>
+<li>
+<h4>医疗美容及面部注射</h4>
+<p>医疗美容手术如眼袋  双眼皮 提眉等面部手术；注射美容除皱和填充等。</p>
+</li>
+<li>
+<h4>门诊激光治疗</h4>
+<p>我们为糖尿病视网膜病变、视网膜静脉阻塞、视网膜裂孔、后发性白内障等提供激光治疗。</p>
+</li>
+<li>
+<h4>玻璃体注射</h4>
+<p>我们为老年性黄斑变性、视网膜静脉阻塞、糖尿病性视网膜病变等提供玻璃体注射治疗。玻璃体注射可以当日完成。</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="top-features">
+<header class="top-feature-head">
+<span>Features</span>
+<h3>工作室特色</h3>
+</header>
+<div class="top-features-inner">
+<div class="top-features-cont">
+<figure class="top-features-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-features01.webp" alt="工作中的主任医师">
+</figure>
+<div class="top-features-text">
+<div class="top-features-text-inner">
+<header class="top-main-head">
+<span><span class="text-green">F</span>eatures 01</span>
+<h3>专业的<span class="text-green">团队成员</span>检查</h3>
+</header>
+<p>万道红屈光性白内障工作室拥有专业知识和技术的员工，帮助保护您的眼睛健康，守护您的多彩的视界。</p>
+<a class="btn top-btn" href="team/index.html">了解更多<span class="arrow">&rarr;</span></a>
+</div>
+</div>
+</div>
+<div class="top-features-cont">
+<figure class="top-features-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-features02.webp" alt="手术室中的院长">
+</figure>
+<div class="top-features-text">
+<div class="top-features-text-inner">
+<header class="top-main-head">
+<span><span class="text-green">F</span>eatures 02</span>
+<h3>先进的<span class="text-green">设备</span>齐全</h3>
+</header>
+<p>我们能够进行包括白内障在内的手术治疗。配备先进的医疗设备。我们致力于建立能够进行适当诊断和治疗的体系。我们也进行大量的白内障手术和视网膜玻璃体手术。</p>
+<a class="btn top-btn" href="facility/index.html">了解更多<span class="arrow">&rarr;</span></a>
+</div>
+</div>
+</div>
+<div class="top-features-cont">
+<figure class="top-features-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-features03.webp" alt="专业医生接诊">
+</figure>
+<div class="top-features-text">
+<div class="top-features-text-inner">
+<header class="top-main-head">
+<span><span class="text-green">F</span>eatures 03</span>
+<a href="retina/index.html"><h3>特色眼底病科<span class="text-green">专科门诊</span></h3></a>
+</header>
+<p>我们还提供眼底病的诊断和治疗，有精湛的主任医师进行视网膜和玻璃体手术。可预约安排门诊和手术。</p>
+<a class="btn top-btn" href="retina/index.html">了解更多<span class="arrow">&rarr;</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="top-topics">
+<div class="top-topics-inner">
+<div class="top-topics-text">
+<header class="top-second-head">
+<span><span class="text-green">T</span>opics</span>
+<h3><span class="text-green">最新</span>信息</h3>
+</header>
+<p>介绍工作室的最新动态<br>等</p>
+</div>
+<div class="top-topics-cont">
+<div class="swiper-container topics-slider">
+<div class="swiper-wrapper">
+<div class="swiper-slide topics-post">
+<a href="topics/480/index.html">
+<figure class="top-topics-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.webp" alt="暂无图片">
+</figure>
+<div class="top-topics-post">
+<h4>关于近视进展抑制眼药水的使用</h4>
+<time datetime="2025-04-18" itemprop="datepublished">2025.04.18</time>
+<span class="gra">专题</span>
+</div>
+</a>
+</div>
+<div class="swiper-slide topics-post">
+<a href="topics/462/index.html">
+<figure class="top-topics-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.webp" alt="爵士音乐会现场">
+</figure>
+<div class="top-topics-post">
+<h4>举办了慈善爵士音乐会</h4>
+<time datetime="2024-09-25" itemprop="datepublished">2024.09.25</time>
+<span class="gra">专题</span>
+</div>
+</a>
+</div>
+<div class="swiper-slide topics-post">
+<a href="topics/460/index.html">
+<figure class="top-topics-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.webp" alt="暂无图片">
+</figure>
+<div class="top-topics-post">
+<h4>关于医疗DX推进体制整备加算</h4>
+<time datetime="2024-09-21" itemprop="datepublished">2024.09.21</time>
+<span class="gra">专题</span>
+</div>
+</a>
+</div>
+<div class="swiper-slide topics-post">
+<a href="topics/454/index.html">
+<figure class="top-topics-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.webp" alt="爵士音乐会通知">
+</figure>
+<div class="top-topics-post">
+<h4>慈善爵士音乐会通知</h4>
+<time datetime="2024-08-26" itemprop="datepublished">2024.08.26</time>
+<span class="gra">专题</span>
+</div>
+</a>
+</div>
+<div class="swiper-slide topics-post">
+<a href="topics/441/index.html">
+<figure class="top-topics-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.webp" alt="暂无图片">
+</figure>
+<div class="top-topics-post">
+<h4>关于医疗信息获取加算</h4>
+<time datetime="2024-05-29" itemprop="datepublished">2024.05.29</time>
+<span class="gra">专题</span>
+</div>
+</a>
+</div>
+<div class="swiper-slide topics-post">
+<a href="topics/201/index.html">
+<figure class="top-topics-img">
+<img loading="lazy" src="wp-content/themes/oculistwan/images/top-no-image.webp" alt="臭氧发生器">
+</figure>
+<div class="top-topics-post">
+<h4>关于新型冠状病毒感染症对策</h4>
+<time datetime="2023-05-02" itemprop="datepublished">2023.05.02</time>
+<span class="gra">专题</span>
+</div>
+</a>
+</div>
+</div>
+<div class="swiper-scrollbar"></div>
+</div>
+</div>
+<a class="btn top-btn topics-btn" href="topics/index.html">查看全部<span class="arrow">&rarr;</span></a>
+</div>
+</section>
+</div>
+<div class="cta">
+<div class="cta-inner">
+<div class="cta-left">
+<header class="cta-head">
+<h3>发展需要合作</h3>
+<span>合作信息</span>
+</header>
+<p>工作室正在寻找合作伙伴。<br>欢迎随时咨询。</p>
+</div>
+<a class="btn cta-btn" href="recruit/index.html">查看合作信息<span class="arrow">&rarr;</span></a>
+</div>
 </div>	<footer class="footer">
-		<div class="footer-top-box">
-			<div class="footer-info">
-				<div class="footer-info-inner">
-					<div class="footer-info-box">
-						<div class="footer-info-head">
-							<h3 class="footer-site-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></h3>
-							<p class="address">徐州市泉山区中山南路 142 号</p>
-						</div>
-						
-					</div>
-					<div class="footer-hour">
-						<table class="hour-table c-hours-table">
-							<thead>
-								<tr>
-									<th>接诊时间</th>
-									<td>周一</td>
-									<td>周二</td>
-									<td>周三</td>
-									<td>周四</td>
-									<td>周五</td>
-									<td>周六</td>
-									<td>周日/节假日</td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>8:00 - 12:00<span>诊疗开始 8:00</span></th>
-									<td>●</td>
-									<td>●</td>
-									<td>●</td>
-									<td>／</td>
-									<td>●</td>
-									<td>●</td>
-									<td>／</td>
-								</tr>
-								<tr>
-									<th>14:00 - 18:00<span>诊疗开始 14:00</span></th>
-									<td>●</td>
-									<td>／</td>
-									<td>●</td>
-									<td>／</td>
-									<td>●</td>
-									<td>／</td>
-									<td>／</td>
-								</tr>
-							</tbody>
-						</table>
-						<ul class="hour-warning">
-							<li>※ 检查开始时间为上午8:00，下午14:00。</li>
-							<li>※ 周一、周二、周五下午为手术日。</li>
-							<li>※ 日间手术患者请提前预约检查再到院手术。</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-			<!-- 点击式地图导航按钮 -->
-			<div class="footer-map mobile-only" style="padding: 20px; text-align: center; background: #f8f9fa;">
-				<h4 style="margin-bottom: 15px; color: #333; font-size: 18px;">📍 医院位置导航</h4>
-				<p style="margin-bottom: 15px; color: #666; font-size: 14px;">徐州市泉山区中山南路 142 号</p>
-				<a href="https://map.baidu.com/search/徐州市中山南路142号/@117.185146,34.262776,17z?title=华夏眼科&content=徐州复兴眼科医院&zoom=17" 
-				   target="_blank" 
-				   style="display: inline-block; padding: 12px 24px; background: linear-gradient(30deg, #269a65, #11adba); color: white; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 16px;">
-					🗺️ 点击查看地图导航
-				</a>
-			</div>
-		</div>
-		<div class="footer-bottom-box gra">
-			
-			<div class="footer-phone-section" style="text-align: center; margin: 20px 0; padding: 15px; background: rgba(0, 0, 0, 0.05); border-radius: 8px; border: 1px solid rgba(38, 154, 101, 0.2);">
-				<p style="margin: 0 0 8px 0; font-size: 16px; color: #333;">📞 电话咨询：<a href="tel:15996396039" style="color: #ff6b35; font-weight: bold; text-decoration: none; font-size: 18px;">15996396039</a></p>
-				<p style="margin: 0; font-size: 14px; color: #333; font-weight: 500;">工作时间内接听，专业医生为您解答</p>
-			</div>
-			
-			
-	<div class="copy">
-		<p>2025 万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院.</p>
-	</div>
-		</div>
-	</footer>
+<div class="footer-top-box">
+<div class="footer-info">
+<div class="footer-info-inner">
+<div class="footer-info-box">
+<div class="footer-info-head">
+<h3 class="footer-site-logo"><a href="index.html"><img src="wp-content/themes/oculistwan/images/logo_meaningful.svg" alt="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院"></a></h3>
+<p class="address">徐州市泉山区中山南路 142 号</p>
+</div>
+</div>
+<div class="footer-hour">
+<table class="hour-table c-hours-table">
+<thead>
+<tr>
+<th>接诊时间</th>
+<td>周一</td>
+<td>周二</td>
+<td>周三</td>
+<td>周四</td>
+<td>周五</td>
+<td>周六</td>
+<td>周日/节假日</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>8:00 - 12:00<span>诊疗开始 8:00</span></th>
+<td>●</td>
+<td>●</td>
+<td>●</td>
+<td>／</td>
+<td>●</td>
+<td>●</td>
+<td>／</td>
+</tr>
+<tr>
+<th>14:00 - 18:00<span>诊疗开始 14:00</span></th>
+<td>●</td>
+<td>／</td>
+<td>●</td>
+<td>／</td>
+<td>●</td>
+<td>／</td>
+<td>／</td>
+</tr>
+</tbody>
+</table>
+<ul class="hour-warning">
+<li>※ 检查开始时间为上午8:00，下午14:00。</li>
+<li>※ 周一、周二、周五下午为手术日。</li>
+<li>※ 日间手术患者请提前预约检查再到院手术。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom-box gra">
+<div class="footer-phone-section" style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0; padding: 15px 20px; background: rgba(0, 0, 0, 0.05); border-radius: 8px; border: 1px solid rgba(38, 154, 101, 0.2);">
+<div style="display: flex; flex-direction: column;">
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #333;">📞 电话咨询：<a href="tel:15996396039" style="color: #ff6b35; font-weight: bold; text-decoration: none; font-size: 18px;">15996396039</a></p>
+<p style="margin: 0; font-size: 13px; color: #666;">工作时间内接听，专业医生为您解答</p>
+</div>
+<div style="display: flex; gap: 16px;">
+<a href="weixin://" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #07C160; border-radius: 8px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;" title="微信公众号" target="_blank">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+<path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c4.801 0 8.692-3.29 8.692-7.343 0-4.054-3.891-7.334-8.692-7.334zm-3.11 4.216c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 5.58 7.584c0-.651.52-1.18 1.162-1.18zm6.22 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm3.873 2.867c-1.797-.052-3.52.512-4.946 1.626a.722.722 0 0 1-.598.082l-1.584-.926a.272.272 0 0 0-.14.046c-.48.28-.766.793-.698 1.346l.26 1.003a.582.582 0 0 1-.207.653c-1.832 1.347-2.914 3.31-2.914 5.487 0 3.21 2.931 5.837 6.566 5.837.826 0 1.622-.12 2.361-.336a.485.485 0 0 1 .398.082l1.583.926a.272.272 0 0 0 .14-.046c.48-.28.766-.793.698-1.346l-.26-1.003a.582.582 0 0 1 .207-.653c1.832-1.347 2.914-3.31 2.914-5.487 0-3.21-2.931-5.837-6.566-5.837z"/>
+</svg>
+</a>
+<a href="snssdk1128://" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #FE2C55, #FF0000); border-radius: 8px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;" title="抖音" target="_blank">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+<path d="M12.528.02c1.31-.02 2.61-.01 3.91-.02.05 1.53.62 3.09 1.74 4.21 1.12 1.12 2.68 1.69 4.21 1.74-.01 1.3-.01 2.6-.02 3.91-.02 1.31.01 2.61.02 3.91-.56 1.46-1.58 2.83-2.96 3.81-1.38.98-3.06 1.67-4.86 1.71v4.28c-1.35-.05-2.69-.28-3.96-.74-.01-1.49-.02-2.98-.02-4.47 0-1.49.01-2.98.02-4.47-.89-1.49-1.29-3.19-.95-4.85.14-.64.42-1.26.83-1.81.41-.55.95-1.01 1.57-1.32.62-.31 1.3-.48 2-.51v-4.3c-.65.02-1.3.17-1.9.45-1.2.56-2.18 1.54-2.74 2.74-.28.6-.43 1.25-.45 1.9h4.28c.03-.7.2-1.38.51-2 .31-.62.77-1.16 1.32-1.57.55-.41 1.17-.69 1.81-.83 1.66-.34 3.36.06 4.85.95-.01-1.3.01-2.61.02-3.91 0-1.3-.02-2.61-.02-3.91-1.53-.05-3.09-.62-4.21-1.74C15.61.64 14.05.07 12.528.02z"/>
+</svg>
+</a>
+<a href="xiaohongshu://" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #FF2442, #FF69B4); border-radius: 8px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;" title="小红书" target="_blank">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+</svg>
+</a>
+</div>
+</div>
+<div class="copy">
+<p>2025 万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院.</p>
+</div>
+</div>
+</footer>
 </div>
 <script src="wp-content/plugins/lazy-loading-responsive-images/js/lazysizes.min.js"></script>
 <script src="wp-content/themes/oculistwan/js/homepage.js"></script>
+<script src="wp-content/themes/oculistwan/js/archive-dropdown.js"></script>
+<script>
+function shareToMoments() {
+    var url = encodeURIComponent(window.location.href);
+    var title = encodeURIComponent('万道红屈光性白内障工作室');
+    var shareUrl = 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + url + '&title=' + title;
+    window.open(shareUrl, '_blank', 'width=600,height=500');
+}
+</script>
 </body>
 </html>
