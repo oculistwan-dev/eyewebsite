@@ -1,16 +1,5 @@
-.venv
-
-# OS / Editor temporary files
-.DS_Store
-Thumbs.db
-
-# Editor folders
+node_modules/
 .vscode/
-
-# Common temp / backups
-*~
-*.swp
-*.bak
-*.orig
-*.tmp
+.idea/
 *.log
+package-lock.json
