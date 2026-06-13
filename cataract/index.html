@@ -30,88 +30,78 @@
 <link rel="stylesheet" id="style-css" href="../wp-content/themes/oculistwan/css/style.min.css?ver=1.0.0" type="text/css" media="all" />
 <link rel="stylesheet" id="eye-comfort-theme" href="../css/eye-comfort-theme.css" type="text/css" media="all" />
 <style id="akismet-widget-style-inline-css" type="text/css">.a-stats {
-				--akismet-color-mid-green: #357b49;
-				--akismet-color-white: #fff;
-				--akismet-color-light-grey: #f6f7f7;
-
-				max-width: 350px;
-				width: auto;
-			}
-
-			.a-stats * {
-				all: unset;
-				box-sizing: border-box;
-			}
-
-			.a-stats strong {
-				font-weight: 600;
-			}
-
-			.a-stats a.a-stats__link,
-			.a-stats a.a-stats__link:visited,
-			.a-stats a.a-stats__link:active {
-				background: var(--akismet-color-mid-green);
-				border: none;
-				box-shadow: none;
-				border-radius: 8px;
-				color: var(--akismet-color-white);
-				cursor: pointer;
-				display: block;
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-				font-weight: 500;
-				padding: 12px;
-				text-align: center;
-				text-decoration: none;
-				transition: all 0.2s ease;
-			}
-
-			/* Extra specificity to deal with TwentyTwentyOne focus style */
-			.widget .a-stats a.a-stats__link:focus {
-				background: var(--akismet-color-mid-green);
-				color: var(--akismet-color-white);
-				text-decoration: none;
-			}
-
-			.a-stats a.a-stats__link:hover {
-				filter: brightness(110%);
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
-			}
-
-			.a-stats .count {
-				color: var(--akismet-color-white);
-				display: block;
-				font-size: 1.5em;
-				line-height: 1.4;
-				padding: 0 13px;
-				white-space: nowrap;
-			}
-		
+--akismet-color-mid-green: #357b49;
+--akismet-color-white: #fff;
+--akismet-color-light-grey: #f6f7f7;
+max-width: 350px;
+width: auto;
+}
+.a-stats * {
+all: unset;
+box-sizing: border-box;
+}
+.a-stats strong {
+font-weight: 600;
+}
+.a-stats a.a-stats__link,
+.a-stats a.a-stats__link:visited,
+.a-stats a.a-stats__link:active {
+background: var(--akismet-color-mid-green);
+border: none;
+box-shadow: none;
+border-radius: 8px;
+color: var(--akismet-color-white);
+cursor: pointer;
+display: block;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+font-weight: 500;
+padding: 12px;
+text-align: center;
+text-decoration: none;
+transition: all 0.2s ease;
+}
+.widget .a-stats a.a-stats__link:focus {
+background: var(--akismet-color-mid-green);
+color: var(--akismet-color-white);
+text-decoration: none;
+}
+.a-stats a.a-stats__link:hover {
+filter: brightness(110%);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+}
+.a-stats .count {
+color: var(--akismet-color-white);
+display: block;
+font-size: 1.5em;
+line-height: 1.4;
+padding: 0 13px;
+white-space: nowrap;
+}
 </style>
 <script src="../vendor/js/jquery.min.js"></script>
 <script type="text/javascript" src="../wp-content/themes/oculistwan/js/infiniteslidev2.min.js?ver=1.0.0" id="infiniteslidev-js"></script>
 <script type="text/javascript" src="../wp-content/themes/oculistwan/js/libs.js?ver=1.0.0" id="libs-js"></script>
-<link rel="https://api.w.org/" href="https://www.xuzhoucataract.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.xuzhoucataract.com/wp-json/wp/v2/pages/29" /><link rel="alternate" type="application/json+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oculistwan.jp%2Fspecialized%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oculistwan.jp%2Fspecialized%2F&amp;format=xml" />
+<link rel="https://api.w.org/" href="https://www.xuzhoucataract.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.xuzhoucataract.com/wp-json/wp/v2/pages/29" />
+<!-- [修复] oembed URL 域名从 oculistwan.jp 修正为 xuzhoucataract.com -->
+<link rel="alternate" type="application/json+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.xuzhoucataract.com%2Fcataract%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.xuzhoucataract.com%2Fcataract%2F&amp;format=xml" />
 <style>:root {
-			--lazy-loader-animation-duration: 300ms;
-		}
-		  
-		.lazyload {
-	display: block;
+--lazy-loader-animation-duration: 300ms;
 }
-
+.lazyload {
+display: block;
+}
 .lazyload,
-        .lazyloading {
-			opacity: 0;
-		}
-
-		.lazyloaded {
-			opacity: 1;
-			transition: opacity 300ms;
-			transition: opacity var(--lazy-loader-animation-duration);
-
+.lazyloading {
+opacity: 0;
+}
+/* [修复] 移除重复的 transition，保留变量版本 */
+.lazyloaded {
+opacity: 1;
+transition: opacity var(--lazy-loader-animation-duration);
+}
+</style>
 <script>
-
 </script>
 
 <style>
@@ -131,7 +121,36 @@
         display: none !important;
     }
 }
-</style></head>
+</style>
+<!-- [修复] 底部电话区域样式从内联提取为CSS类 -->
+<style>
+.footer-phone-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(38, 154, 101, 0.2);
+}
+.footer-phone-section .phone-label {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+.footer-phone-section .phone-number {
+    color: #ff6b35;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+.footer-phone-section .phone-note {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+</style>
+</head>
 <body>
 	<div class="loading" data-title=".dot-windmill">
 		<div class="stage">
@@ -177,7 +196,7 @@
 									<div class="sub-menu-cont">
 										<ul>
 											<li><a href="../team/index.html">我们的团队名称</a></li>
-									<li><a href="../team/elegance/index.html">团队理念</a></li>
+<li><a href="../team/elegance/index.html">团队理念</a></li>
 											<li><a href="../team/service/index.html">特检客服</a></li>
 											
 										</ul>
@@ -215,7 +234,7 @@
 								<li><div>我们的团队<div class="icon-wrap"><span class="icon"></span></div></div>
 									<ul class="close">
 										<li><a href="../team/index.html">我们的团队名称</a></li>
-									<li><a href="../team/elegance/index.html">团队理念</a></li>
+<li><a href="../team/elegance/index.html">团队理念</a></li>
 										<li><a href="../team/service/index.html">特检客服</a></li>
 										
 									</ul>
@@ -257,7 +276,8 @@
 									<tr>
 										<th>14:00 - 18:00<span>诊疗开始 14:00</span></th>
 										<td>●</td>
-										<td>／</td>
+										<!-- [修复] 周二下午为手术日，应显示开诊 ● -->
+										<td>●</td>
 										<td>●</td>
 										<td>／</td>
 										<td>●</td>
@@ -566,15 +586,15 @@
 	</div>
 </div>
 </div><footer class="footer"><div class="footer-bottom-box gra">
-			
-			<div class="footer-phone-section" style="text-align: center; margin: 20px 0; padding: 15px; background: rgba(0, 0, 0, 0.05); border-radius: 8px; border: 1px solid rgba(38, 154, 101, 0.2);">
-				<p style="margin: 0 0 8px 0; font-size: 16px; color: #333;">📞 电话咨询：<a href="tel:15996396039" style="color: #ff6b35; font-weight: bold; text-decoration: none; font-size: 18px;">15996396039</a></p>
-				<p style="margin: 0; font-size: 14px; color: #333; font-weight: 500;">工作时间内接听，专业医生为您解答</p>
+<!-- [修复] 底部电话区域：内联样式提取为CSS类 -->
+			<div class="footer-phone-section">
+				<p class="phone-label">📞 电话咨询：<a href="tel:15996396039" class="phone-number">15996396039</a></p>
+				<p class="phone-note">工作时间内接听，专业医生为您解答</p>
 			</div>
 			
-			
+		<!-- [修复] 版权年份从2025更新为2026 -->
 	<div class="copy">
-		<p>2025 万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院.</p>
+		<p>2026 万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院.</p>
 	</div>
 		</div>
 	</footer>

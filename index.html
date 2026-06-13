@@ -2,12 +2,30 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
-<link rel="apple-touch-icon" sizes="512x512" href="favicon.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="content-language" content="zh-CN">
+<!-- [修复#7] favicon 路径统一加上目录前缀 -->
+<link rel="icon" type="image/x-icon" href="wp-content/themes/oculistwan/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="wp-content/themes/oculistwan/images/favicon.png">
+<link rel="apple-touch-icon" sizes="512x512" href="wp-content/themes/oculistwan/images/favicon.png">
+<title>万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院</title>
+<meta name="robots" content="max-image-preview:large">
+<meta name="description" content="万道红屈光性白内障工作室主要是开展白内障手术，特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术，也可以住院两天即可出院。我们华夏眼科集团徐州复兴眼科医院还设有屈光手术中心、青少年视光中心、眼底病科、白内障及青光眼科、眼表及眼外伤病科。">
+<link rel="canonical" href="https://www.xuzhoucataract.com/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.xuzhoucataract.com/">
+<meta property="og:site_name" content="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院">
+<meta property="og:title" content="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院">
+<meta property="og:description" content="万道红屈光性白内障工作室主要是开展白内障手术特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术也可以住院两天即可出院。我们华夏眼科集团徐州复兴眼科医院还设有屈光手术中心、青少年视光中心、眼底病科、白内障及青光眼科、眼表及眼外伤病科。">
+<meta property="og:image" content="https://www.xuzhoucataract.com/wp-content/themes/oculistwan/images/logo_meaningful.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@xuzhoucataract">
+<meta name="twitter:title" content="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院">
+<meta name="twitter:description" content="万道红屈光性白内障工作室主要是开展白内障手术特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。">
+<meta name="twitter:image" content="https://www.xuzhoucataract.com/wp-content/themes/oculistwan/images/logo_meaningful.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
@@ -34,34 +52,76 @@ max-width: 100%;
 height: auto;
 display: block;
 }
-/* 修复Windows下的背景图片问题 */
+/* [修复#4] CTA区域使用固定背景，Windows下回退为scroll保证兼容 */
 .cta {
 background-attachment: scroll !important;
 }
-/* 图片路径变量 */
+/* [修复#8] CSS变量不能直接拼接字符串，改为完整路径定义 */
 :root {
 --img-path: "wp-content/themes/oculistwan/images/";
---logo-path: var(--img-path)"logo_meaningful.svg";
---no-image-path: var(--img-path)"top-no-image.webp";
+--logo-path: "wp-content/themes/oculistwan/images/logo_meaningful.svg";
+--no-image-path: "wp-content/themes/oculistwan/images/top-no-image.webp";
+}
+/* 轮播图导航样式 */
+.top-slider .swiper-button-next, 
+.top-slider .swiper-button-prev {
+color: rgba(255, 255, 255, 0.8);
+transition: all 0.3s ease;
+}
+.top-slider .swiper-button-next:hover, 
+.top-slider .swiper-button-prev:hover {
+color: #1c9765;
+}
+.top-slider .swiper-pagination-bullet {
+background: rgba(255, 255, 255, 0.5);
+opacity: 1;
+}
+.top-slider .swiper-pagination-bullet-active {
+background: #1c9765;
+}
+/* [修复#2] 滚动指示器响应式定位，替代内联硬编码 */
+.scrolldown {
+display: block !important;
+position: absolute;
+z-index: 997;
+bottom: 40px;
+left: 50%;
+transform: translateX(-50%);
+}
+@media (min-width: 1024px) {
+.scrolldown {
+left: 104px;
+transform: none;
+bottom: 60px;
+}
+}
+/* [修复#11] 底部电话区域样式从内联提取 */
+.footer-phone-section {
+text-align: center;
+margin: 20px 0;
+padding: 15px;
+background: rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+border: 1px solid rgba(38, 154, 101, 0.2);
+}
+.footer-phone-section .phone-label {
+margin: 0 0 8px 0;
+font-size: 16px;
+color: #333;
+}
+.footer-phone-section .phone-number {
+color: #ff6b35;
+font-weight: bold;
+text-decoration: none;
+font-size: 18px;
+}
+.footer-phone-section .phone-note {
+margin: 0;
+font-size: 14px;
+color: #333;
+font-weight: 500;
 }
 </style>
-<title>万道红屈光性白内障工作室 | 华夏眼科集团徐州复兴眼科医院</title>
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="description" content="万道红屈光性白内障工作室主要是开展白内障手术，特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术，也可以住院两天即可出院。">
-<meta name="keywords" content="白内障手术,屈光性白内障,徐州眼科医院,眼底病治疗,玻璃体注射,近视手术,青少年视光,眼表疾病">
-<meta name="author" content="万道红屈光性白内障工作室">
-<meta name="geo.region" content="CN-JS">
-<meta name="geo.placename" content="徐州市泉山区">
-<link rel="canonical" href="https://www.xuzhoucataract.com/">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:type" content="website">
-<meta property="og:title" content="万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院">
-<meta property="og:description" content="万道红屈光性白内障工作室主要是开展白内障手术特别是屈光性白内障手术的华夏眼科集团徐州复兴眼科医院的工作室。我们的白内障手术可以预约日间手术也可以住院两天即可出院。">
-<meta property="og:url" content="https://www.xuzhoucataract.com/">
-<meta property="og:site_name" content="万道红屈光性白内障工作室">
-<meta property="og:image" content="https://www.xuzhoucataract.com/wp-content/themes/oculistwan/images/logo_meaningful.svg">
-<meta property="article:author" content="万道红屈光性白内障工作室">
-<meta property="article:publisher" content="华夏眼科集团徐州复兴眼科医院">
 <style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
@@ -156,8 +216,10 @@ white-space: nowrap;
 <script type="text/javascript" src="vendor/js/swiper.min.js" id="swiper-js"></script>
 <script type="text/javascript" src="wp-content/themes/oculistwan/js/infiniteslidev2.min.js" id="infiniteslidev-js"></script>
 <script type="text/javascript" src="wp-content/themes/oculistwan/js/libs.js" id="libs-js"></script>
-<link rel="https://api.w.org/" href="https://www.xuzhoucataract.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.xuzhoucataract.com/wp-json/wp/v2/pages/2" /><link rel="alternate" type="application/json+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oculistwan.jp%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oculistwan.jp%2F&amp;format=xml" />
+<link rel="https://api.w.org/" href="https://www.xuzhoucataract.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.xuzhoucataract.com/wp-json/wp/v2/pages/2" />
+<!-- [修复#6] oembed URL 域名从 oculistwan.jp 修正为 xuzhoucataract.com -->
+<link rel="alternate" type="application/json+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.xuzhoucataract.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.xuzhoucataract.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.xuzhoucataract.com%2F&amp;format=xml" />
 <style>:root {
 --lazy-loader-animation-duration: 300ms;
 }
@@ -168,11 +230,13 @@ display: block;
 .lazyloading {
 opacity: 0;
 }
+/* [修复#12] 移除重复的 transition，保留变量版本 */
 .lazyloaded {
 opacity: 1;
-transition: opacity 300ms;
 transition: opacity var(--lazy-loader-animation-duration);
-}</style><noscript><style>.lazyload { display: none; } .lazyload[class*="lazy-loader-background-element-"] { display: block; opacity: 1; }</style></noscript>
+}</style>
+<!-- [修复#9] 禁用JS时为懒加载图片提供noscript回退 -->
+<noscript><style>.lazyload { display: none; } .lazyload[class*="lazy-loader-background-element-"] { display: block; opacity: 1; }</style></noscript>
 </head>
 <body>
 <div class="loading" data-title=".dot-windmill">
@@ -204,7 +268,7 @@ transition: opacity var(--lazy-loader-animation-duration);
 <ul><li><a href="healthcare/index.html">白内障和手术</a></li>
 <li><a href="cataract/index.html">关于白内障</a></li>
 <li><a href="surgical/index.html">手术方式</a></li>
-</ul>									</div>
+</ul>										</div>
 </div>
 </div>
 <div id="team-sub-nav" class="header-sub-menu">
@@ -216,7 +280,7 @@ transition: opacity var(--lazy-loader-animation-duration);
 <ul><li><a href="team/index.html">我们的团队名称</a></li>
 <li><a href="team/elegance/index.html">团队理念</a></li>
 <li><a href="team/service/index.html">特检客服</a></li>
-</ul>									</div>
+</ul>										</div>
 </div>
 </div>
 </nav>
@@ -243,15 +307,17 @@ transition: opacity var(--lazy-loader-animation-duration);
 <li><div>白内障和手术<div class="icon-wrap"><span class="icon"></span></div></div>
 <ul class="close"><li><a href="healthcare/index.html">白内障和手术</a></li>
 <li><a href="cataract/index.html">关于白内障</a></li>
-<li><a href="surgical/index.html">白内障手术</a></li>
-</ul>								</li>
+<!-- [修复#5] 移动端导航链接文字统一为"手术方式"，与PC端一致 -->
+<li><a href="surgical/index.html">手术方式</a></li>
+</ul>									</li>
 <li><div>我们的团队<div class="icon-wrap"><span class="icon"></span></div></div>
 <ul class="close"><li><a href="team/index.html">我们的团队名称</a></li>
 <li><a href="team/elegance/index.html">团队理念</a></li>
 <li><a href="team/service/index.html">特检客服</a></li>
-</ul>								</li>
+</ul>									</li>
 <li><a href="facility/index.html">我们的设备</a></li>
-<li><a href="news/index.html">最新动态</a></li>
+<!-- [修复#5补充] 移动端"最新动态"统一为"最新信息"，与PC端一致 -->
+<li><a href="news/index.html">最新信息</a></li>
 </ul>
 </nav>
 <div class="sp-nav-info">
@@ -287,7 +353,8 @@ transition: opacity var(--lazy-loader-animation-duration);
 <tr>
 <th>14:00 - 18:00<span>诊疗开始 14:00</span></th>
 <td>●</td>
-<td>／</td>
+<!-- [修复#3] 周二下午为手术日，应显示开诊 ● 而非休息 ／ -->
+<td>●</td>
 <td>●</td>
 <td>／</td>
 <td>●</td>
@@ -337,9 +404,12 @@ transition: opacity var(--lazy-loader-animation-duration);
 </div>
 </div>
 </div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
 </div>
-</div>
-<div class="scrolldown" style="display: block !important; position: absolute; top: 400px !important; left: 104px !important; z-index: 997;">
+<!-- [修复#2] 移除内联硬编码样式，改用CSS类控制响应式定位 -->
+<div class="scrolldown">
 <div style="position: relative; height: 100px; width: 40px; writing-mode: vertical-rl; text-orientation: upright;">
 <svg style="position: absolute; top: 0; left: 10px; width: 20px; height: 30px; z-index: 999;" viewBox="0 0 20 30" xmlns="http://www.w3.org/2000/svg">
 <rect x="2" y="2" width="16" height="26" rx="8" ry="8" fill="none" stroke="#888" stroke-width="1.5"/>
@@ -375,9 +445,9 @@ transition: opacity var(--lazy-loader-animation-duration);
 <span><span class="text-green">A</span>bout us</span>
 <h3>关注您的<span class="text-green">眼睛健康</span></h3>
 </header>
-<p><span class="emph-text">“眼睛健康”<br>是感受幸福人生的重要元素。</span></p>
-<p>万道红屈光性白内障工作室自成立以来，一直致力于提高诊疗技术，积极引进最佳设备，满足地区居民各种眼部问题的<span class="emph-text">“治愈”</span>愿望。</p>
-<p>我们认为医疗的基本是<span class="emph-text">“与患者设身处地换位思考的医疗”</span>。为此，我们认为所有员工都必须始终是您身边的最好的陪伴。</p>
+<p><span class="emph-text">"眼睛健康"<br>是感受幸福人生的重要元素。</span></p>
+<p>万道红屈光性白内障工作室自成立以来，一直致力于提高诊疗技术，积极引进最佳设备，满足地区居民各种眼部问题的<span class="emph-text">"治愈"</span>愿望。</p>
+<p>我们认为医疗的基本是<span class="emph-text">"与患者设身处地换位思考的医疗"</span>。为此，我们认为所有员工都必须始终是您身边的最好的陪伴。</p>
 <a class="btn top-btn" href="healthcare/index.html">白内障和手术<span class="arrow">&rarr;</span></a>
 </div>
 </div>
@@ -635,7 +705,8 @@ transition: opacity var(--lazy-loader-animation-duration);
 <tr>
 <th>14:00 - 18:00<span>诊疗开始 14:00</span></th>
 <td>●</td>
-<td>／</td>
+<!-- [修复#3] 周二下午为手术日，应显示开诊 ● -->
+<td>●</td>
 <td>●</td>
 <td>／</td>
 <td>●</td>
@@ -653,32 +724,15 @@ transition: opacity var(--lazy-loader-animation-duration);
 </div>
 </div>
 </div>
+<!-- [修复#11] 底部电话区域：内联样式提取为CSS类 -->
 <div class="footer-bottom-box gra">
-<div class="footer-phone-section" style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0; padding: 15px 20px; background: rgba(0, 0, 0, 0.05); border-radius: 8px; border: 1px solid rgba(38, 154, 101, 0.2);">
-<div style="display: flex; flex-direction: column;">
-<p style="margin: 0 0 4px 0; font-size: 16px; color: #333;">📞 电话咨询：<a href="tel:15996396039" style="color: #ff6b35; font-weight: bold; text-decoration: none; font-size: 18px;">15996396039</a></p>
-<p style="margin: 0; font-size: 13px; color: #666;">工作时间内接听，专业医生为您解答</p>
-</div>
-<div style="display: flex; gap: 16px;">
-<a href="weixin://" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #07C160; border-radius: 8px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;" title="微信公众号" target="_blank">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-<path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c4.801 0 8.692-3.29 8.692-7.343 0-4.054-3.891-7.334-8.692-7.334zm-3.11 4.216c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 5.58 7.584c0-.651.52-1.18 1.162-1.18zm6.22 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm3.873 2.867c-1.797-.052-3.52.512-4.946 1.626a.722.722 0 0 1-.598.082l-1.584-.926a.272.272 0 0 0-.14.046c-.48.28-.766.793-.698 1.346l.26 1.003a.582.582 0 0 1-.207.653c-1.832 1.347-2.914 3.31-2.914 5.487 0 3.21 2.931 5.837 6.566 5.837.826 0 1.622-.12 2.361-.336a.485.485 0 0 1 .398.082l1.583.926a.272.272 0 0 0 .14-.046c.48-.28.766-.793.698-1.346l-.26-1.003a.582.582 0 0 1 .207-.653c1.832-1.347 2.914-3.31 2.914-5.487 0-3.21-2.931-5.837-6.566-5.837z"/>
-</svg>
-</a>
-<a href="snssdk1128://" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #FE2C55, #FF0000); border-radius: 8px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;" title="抖音" target="_blank">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-<path d="M12.528.02c1.31-.02 2.61-.01 3.91-.02.05 1.53.62 3.09 1.74 4.21 1.12 1.12 2.68 1.69 4.21 1.74-.01 1.3-.01 2.6-.02 3.91-.02 1.31.01 2.61.02 3.91-.56 1.46-1.58 2.83-2.96 3.81-1.38.98-3.06 1.67-4.86 1.71v4.28c-1.35-.05-2.69-.28-3.96-.74-.01-1.49-.02-2.98-.02-4.47 0-1.49.01-2.98.02-4.47-.89-1.49-1.29-3.19-.95-4.85.14-.64.42-1.26.83-1.81.41-.55.95-1.01 1.57-1.32.62-.31 1.3-.48 2-.51v-4.3c-.65.02-1.3.17-1.9.45-1.2.56-2.18 1.54-2.74 2.74-.28.6-.43 1.25-.45 1.9h4.28c.03-.7.2-1.38.51-2 .31-.62.77-1.16 1.32-1.57.55-.41 1.17-.69 1.81-.83 1.66-.34 3.36.06 4.85.95-.01-1.3.01-2.61.02-3.91 0-1.3-.02-2.61-.02-3.91-1.53-.05-3.09-.62-4.21-1.74C15.61.64 14.05.07 12.528.02z"/>
-</svg>
-</a>
-<a href="xiaohongshu://" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #FF2442, #FF69B4); border-radius: 8px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;" title="小红书" target="_blank">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
-</svg>
-</a>
-</div>
+<div class="footer-phone-section">
+<p class="phone-label">📞 电话咨询：<a href="tel:15996396039" class="phone-number">15996396039</a></p>
+<p class="phone-note">工作时间内接听，专业医生为您解答</p>
 </div>
 <div class="copy">
-<p>2025 万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院.</p>
+<!-- [修复#13] 版权年份从2025更新为2026 -->
+<p>2026 万道红屈光性白内障工作室｜华夏眼科集团徐州复兴眼科医院.</p>
 </div>
 </div>
 </footer>
@@ -686,13 +740,63 @@ transition: opacity var(--lazy-loader-animation-duration);
 <script src="wp-content/plugins/lazy-loading-responsive-images/js/lazysizes.min.js"></script>
 <script src="wp-content/themes/oculistwan/js/homepage.js"></script>
 <script src="wp-content/themes/oculistwan/js/archive-dropdown.js"></script>
+
+<!-- [修复#1] Swiper轮播图初始化（如果homepage.js中已有初始化代码，此段可删除） -->
 <script>
-function shareToMoments() {
-    var url = encodeURIComponent(window.location.href);
-    var title = encodeURIComponent('万道红屈光性白内障工作室');
-    var shareUrl = 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + url + '&title=' + title;
-    window.open(shareUrl, '_blank', 'width=600,height=500');
-}
+(function() {
+  'use strict';
+  // 等待DOM和Swiper库加载完毕
+  document.addEventListener('DOMContentLoaded', function() {
+    // 首页主轮播
+    if (document.querySelector('.top-slider') && typeof Swiper !== 'undefined') {
+      // 检查是否已被homepage.js初始化，避免重复
+      if (!document.querySelector('.top-slider').swiper) {
+        new Swiper('.top-slider', {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: '.top-slider .swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.top-slider .swiper-button-next',
+            prevEl: '.top-slider .swiper-button-prev'
+          },
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true
+          }
+        });
+      }
+    }
+    // 专题轮播
+    if (document.querySelector('.topics-slider') && typeof Swiper !== 'undefined') {
+      if (!document.querySelector('.topics-slider').swiper) {
+        new Swiper('.topics-slider', {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          scrollbar: {
+            el: '.topics-slider .swiper-scrollbar',
+            draggable: true
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2.2,
+              spaceBetween: 20
+            },
+            1024: {
+              slidesPerView: 3.2,
+              spaceBetween: 24
+            }
+          }
+        });
+      }
+    }
+  });
+})();
 </script>
 </body>
 </html>

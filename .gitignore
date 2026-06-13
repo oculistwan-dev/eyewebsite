@@ -1,5 +1,5 @@
+.DS_Store
+._*
 node_modules/
-.vscode/
-.idea/
-*.log
-package-lock.json
+__MACOSX/
+Thumbs.db
